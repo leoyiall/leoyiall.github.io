@@ -1,0 +1,122 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+	<head>
+		<!--ÉùÃ÷µ±Ç°Ò³ÃæµÄ±àÂë¼¯charset=gbkÖÐÎÄ±àÂëgb2312,charset=utf-8 ¹ú¼Ê±àÂë-->
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<!--µ±Ç°Ò³ÃæµÄÈýÒªËØ-->
+		<title>标题</title>
+		<meta name="Keywords" content="gbk2312">
+		<meta name="description" content="ÃèÊö">	
+		<!--css , js-->
+<style type="text/css">
+p{margin:0;padding:0;}
+#con{
+	width:1000px;
+	height:351px;
+	margin:50px auto;
+}
+#con #left{
+	width:528px;
+	height:351px;
+	float:left;
+	position:relative;
+}
+#con #middle{
+	width:234px;
+	height:351px;
+	float:left;
+}
+#con #right{
+	width:234px;
+	height:351px;
+	float:right;
+}
+.top{width:234px;height:175px;position:relative;z-index:1;
+}
+.bottom{width:234px;height:175px;position:relative;}
+.bq{
+	width:80px;
+	height:30px;
+	text-align:center;
+	line-height:30px;
+	color:#fff;
+	position:absolute;
+	bottom:10px;
+	left:0;
+	background:rgba(10,10,10,0.5);
+}
+.fj{
+	width:110px;
+	height:30px;
+}
+.kuai span{
+	width:234px;
+	height:175px;
+	position:absolute;
+	top:0;
+	color:#fff;
+	background:rgba(10,10,10,0.5);
+	z-index:2;
+	color:#ccc;
+	display: block;
+	-webkit-transition:height 0.5s ease;
+}
+.kuai h3{-webkit-transition:height 0.5s ease;}
+.kuai p{-webkit-transition:height 0.5s ease;}
+.top span h3{
+	margin-top:70px;
+	font-size:16px;
+	margin-left:25px;
+}
+.top span p{
+	width:234px;
+	font-size:12px;
+	line-height:20px;
+	margin-left:25px;
+}
+.kuai:hover span{	
+	height:0;
+}
+.kuai:hover h3{display:none;}
+.kuai:hover p{display:none;}
+
+</style>
+
+	</head>
+
+<body>
+	<div id="con">
+		<div id="left">
+			<img src="images/1.jpg">
+		<p class="bq">萌女</p>
+		</div>
+		<div id="middle">
+			<div class="top kuai">
+				<img src="images/2.jpg">
+				<span class="xs">
+					<h3>舌尖II第七集《三餐》</h3>
+				<p>舌尖里“中国梦”是美食背后<br/>中国人对幸福圆满的追求</p>
+				</span>
+			</div>
+			<div class="bottom">
+				<img src="images/3.jpg">
+			<p class="bq fj">美丽风景</p>
+			</div>
+		</div>
+		<div id="right">
+			<div class="bottom">
+				<img src="images/4.jpg">
+			<p class="bq">宠物</p>
+			</div>
+			<div class="top kuai" >
+				<img src="images/5.jpg">
+				<span >
+					<h3>世界杯</h3>
+				<p>世界杯的获奖<br/>中国人对这个是非常的追求</p>
+				</span>
+			</div>	
+		</div>
+	</div>
+
+</body>
+</html>

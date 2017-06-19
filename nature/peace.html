@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>与自然相守的故事——和谐相处</title>
+<link rel="stylesheet" type="text/css" href="css/protect.css" />
+<link href="css/bootstrap.css"rel="stylesheet" />
+<link rel="stylesheet" type="text/css" href="css/default.css">
+<link rel="shortcut icon" href="nature.ico" type="image/x-icon" />
+<!-- 图片墙 -->
+<style type="text/css">
+ul,li{list-style:none;}
+.heartPic{width:749px;height:630px;margin:0 auto;}
+.heartPic ul{float:left;width:749px;}
+.heartPic ul li{float:left;width:100px;height:100px;padding:2px;cursor:pointer;}
+.heartPic ul li.on{z-index:99;}
+.heartPic ul li.on .in{position:relative;left:-50px;top:-50px;padding:5px 5px 20px 5px;}
+.heartPic ul li .pTxt{display:none;width:100px;height:15px;text-align:center;color:#fff;overflow:hidden;}
+.heartPic .showDiv{display:block;}
+</style>
+
+</head>
+<body>
+<!-- 头部 -->
+<div class="topBox">
+ <div class="conWidth">
+	 <div id="logo" style="float:left">
+	 	<img src="images/logo.png" width="100" height="80" alt="">
+	 </div>
+	 <div id="logoText" style="float:left;font-size:25px;font-weight:bold;color:#333;margin-left:10px;font-family:'微软雅黑';line-height:80px;">
+	 	<img src="images/text.png" width="200" height="80" alt="">
+	 </div>
+	 <div class="navBox">
+	 	<ul>
+	 		<li>
+	 			<a href="index.html">
+	 				<img src="images/sun.png" width="60" height="60" alt="">
+	 				<span>首页</span>
+	 			</a>
+	 		</li>
+	 		<li>
+	 			<a href="nature_story/nature_beautful.html">
+	 				<img src="images/flower.png" width="60" height="60" alt="">
+	 				<span>美丽自然</span>
+	 			</a>
+	 		</li>	
+	 		<li>
+	 			<a href="destroyNature.html">
+	 				<img src="images/tree.png" width="60" height="60" alt="">
+	 				<span>破坏自然</span>
+	 			</a>
+	 		</li>	 		
+	 		<li>
+	 			<a href="protectNature.html">
+	 				<img src="images/cloud.png" width="60" height="60" alt="">
+	 				<span>保卫自然</span>
+	 			</a>
+	 		</li>	
+	 		<li>
+	 			<a href="peace.html">
+	 				<img src="images/butterfly.png" width="60" height="60" alt="">
+	 				<span>和谐相处</span>
+	 			</a>
+	 		</li>
+	 	</ul>
+	 </div>
+  </div>
+</div>
+<!-- 切换图 -->
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+	<!-- Indicators -->
+	<ol class="carousel-indicators">
+		<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+		<li data-target="#myCarousel" data-slide-to="1"></li>
+		<li data-target="#myCarousel" data-slide-to="2"></li>
+		<li data-target="#myCarousel" data-slide-to="3"></li>
+		<li data-target="#myCarousel" data-slide-to="4"></li>
+	</ol>
+	<div class="carousel-inner">
+		<div class="item active">
+			<img src="images/hx1.jpg" style="width: 100%" data-src=" " alt="First slide">
+			<div class="container">
+				<div class="carousel-caption">
+					<h1>植物节</h1>
+					<p>树木是地球的肺，给我们提供着生存的必须品“氧”，我们必须重视植树节。</p>
+				</div>
+			</div>
+		</div>
+		<div class="item">
+			<img src="images/hx2.jpg" style="width: 100%" data-src="" alt="Second slide">
+			<div class="container">
+				<div class="carousel-caption">
+					<h1>垃圾分类</h1>
+					<p>要时刻保持着资源回收的思想，绝不能乱丢垃圾。</p>
+				</div>
+			</div>
+		</div>
+		<div class="item">
+			<img src="images/hx3.jpg" style="width: 100%" data-src="" alt="Third slide">
+			<div class="container">
+				<div class="carousel-caption">
+					<h1>地球一小时</h1>
+					<p>人们越来越关注地球的变暖，每年的三月份全世界都会关灯一小时，为了号召保护地球而贡献自己的力量。</p>
+				</div>
+			</div>
+		</div>
+		<div class="item">
+			<img src="images/hx4.jpg" style="width: 100%" data-src="" alt="Third slide">
+		</div>
+		<div class="item">
+			<img src="images/hx5.png" style="width: 100%" data-src="" alt="Third slide">
+		</div>
+	</div>
+	<a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left">
+	</span></a><a class="right carousel-control" href="#myCarousel" data-slide="next"><span
+		class="glyphicon glyphicon-chevron-right"></span></a>
+</div>
+<!-- /.carousel -->
+<script src="js/jquery-1.11.1.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<!-- 切换图结束 -->
+<div id="peaceBox" style="margin-top:-20px;height:670px;">
+<h1 style="padding-top:20px;">环保，我们在行动</h1>
+	<div class="heartPic">
+		<ul>
+			<li></li>
+			<li>
+	        	<div class="in">
+	            	<img width="100" height="100" src="images/bh1.jpg" />
+	                <p class="pTxt">可爱的女娃娃</p>
+	            </div>
+	        </li>
+			<li>
+	        	<div class="in">
+	            	<img width="100" height="100" src="images/bh2.jpg" />
+	                <p class="pTxt">呆萌的小熊</p>
+	            </div>
+	        </li>
+			<li></li>
+			<li>
+	        	<div class="in">
+	            	<img width="100" height="100" src="images/bh3.jpg" />
+	                <p class="pTxt">卡哇伊的小熊</p>
+	            </div>
+	        </li>
+			<li>
+	        	<div class="in">
+	            	<img width="100" height="100" src="images/bh4.jpg" />
+	                <p class="pTxt">女巫骑着扫帚</p>
+	            </div>
+	        </li>
+			<li></li>
+		</ul>
+		<ul>
+			<li>
+	        	<div class="in">
+	            	<img width="100" height="100" src="images/bh5.jpg" />
+	                <p class="pTxt">女娃娃</p>
+	            </div>
+	        </li>
+			<li>
+	        	<div class="in">
+	        		<img width="100" height="100" src="images/bh6.jpg" />
+	                <p class="pTxt">星星可爱</p>
+	            </div>
+	        </li>
+			<li>
+	        	<div class="in">
+	            	<img width="100" height="100" src="images/bh7.jpg" />
+	                <p class="pTxt">呆萌女</p>
+	            </div>
+	        </li>
+			<li>
+	        	<div class="in">
+	            	<img width="100" height="100" src="images/bh8.jpg" />
+	                <p class="pTxt">狗狗</p>
+	            </div>
+	        </li>
+			<li>
+	        	<div class="in">
+	            	<img width="100" height="100" src="images/bh9.jpg" />
+	                <p class="pTxt">绿树</p>
+	            </div>
+	        </li>
+			<li>
+	        	<div class="in">
+	            	<img width="100" height="100" src="images/bh10.jpg" />
+	                <p class="pTxt">粉爱粉爱的</p>
+	            </div>
+	        </li>
+			<li>
+	        	<div class="in">
+	            	<img width="100" height="100" src="images/index_11.jpg" />
+	                <p class="pTxt">蜡笔小新</p>
+	            </div>
+	        </li>
+		</ul>
+		<ul>
+			<li>
+	        	<div class="in">
+	            	<img width="100" height="100" src="images/index_112.jpg" />
+	                <p class="pTxt">震不碎的心</p>
+	            </div>
+	        </li>
+			<li>
+	        	<div class="in">
+	            	<img width="100" height="100" src="images/index_13.jpg" />
+	                <p class="pTxt">很有意境</p>
+	            </div>
+	        </li>
+			<li>
+	        	<div class="in">
+	            	<img width="100" height="100" src="images/index_14.jpg" />
+	                <p class="pTxt">樱木花道最爱啊</p>
+	            </div>
+	        </li>
+			<li>
+	        	<div class="in">
+	            	<img width="100" height="100" src="images/index_15.jpg" />
+	                <p class="pTxt">俩骷髅</p>
+	            </div>
+	        </li>
+			<li>
+	        	<div class="in">
+	            	<img width="100" height="100" src="images/index_16.jpg" />
+	                <p class="pTxt">萌妹子</p>
+	            </div>
+	        </li>
+			<li>
+	        	<div class="in">
+	            	<img width="100" height="100" src="images/index_17.jpg" />
+	                <p class="pTxt">可爱的小狗</p>
+	            </div>
+	        </li>
+			<li>
+	        	<div class="in">
+	            	<img width="100" height="100" src="images/index_18.jpg" />
+	                <p class="pTxt">夫妇俩白头偕老</p>
+	            </div>
+	        </li>
+		</ul>
+		<ul>
+			<li></li>
+			<li>
+	        	<div class="in">
+	            	<img width="100" height="100" src="images/index_19.jpg" />
+	                <p class="pTxt">刷子</p>
+	            </div>
+	        </li>
+			<li>
+	        	<div class="in">
+	            	<img width="100" height="100" src="images/index_20.jpg" />
+	                <p class="pTxt">偶的头像</p>
+	            </div>
+	        </li>
+			<li>
+	        	<div class="in">
+	            	<img width="100" height="100" src="images/index_21.jpg" />
+	                <p class="pTxt">树叶子</p>
+	            </div>
+	        </li>
+			<li>
+	        	<div class="in">
+	            	<img width="100" height="100" src="images/index_22.jpg" />
+	                <p class="pTxt">星星</p>
+	            </div>
+	        </li>
+			<li>
+	        	<div class="in">
+	            	<img width="100" height="100" src="images/index_23.jpg" />
+	                <p class="pTxt">浅色哦</p>
+	            </div>
+	        </li>
+			<li></li>
+		</ul>
+		<ul>
+			<li></li>
+			<li></li>
+			<li>
+	        	<div class="in">
+	            	<img width="100" height="100" src="images/index_24.jpg" />
+	                <p class="pTxt">太阳帅哥</p>
+	            </div>
+	        </li>
+			<li>
+	        	<div class="in">
+	            	<img width="100" height="100" src="images/index_25.jpg" />
+	                <p class="pTxt">大笑脸</p>
+	            </div>
+	        </li>
+			<li>
+	        	<div class="in">
+	            	<img width="100" height="100" src="images/index_26.jpg" />
+	                <p class="pTxt">企鹅</p>
+	            </div>
+	        </li>
+			<li></li>
+			<li></li>
+		</ul>
+		<ul>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li>
+	        	<div class="in">
+	            	<img width="100" height="100" src="images/index_27.jpg" />
+	                <p class="pTxt">小兔子</p>
+	            </div>
+	        </li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+	</div>
+</div>
+<div id="peaceBoxs" style="height:650px;">
+<div id="midWidth" >
+<h1 style="text-align:center;width:1000px;">如何与自然和谐相处？</h1>
+	<p>
+		　一、树立生态道德观，倡导绿色生活模式。人类是自然之子，我们无时无刻不受自然的恩惠，我们的生存依赖于自然生态系统。今天，我们不能再以一个征服者的面目对自然发号施令，而必须学会尊重自然、善待自然，自觉充当维护自然稳定与和谐的调节者。实现这一角色的转换不仅需要外在的法律强制，更需要我们的良知和内在的道德力量。虽然我们对生态环境日趋恶化的严峻现实已经有了比较清醒的认识，但对如何提高全民生态环境保护意识尚缺乏有效的对策。因此，我们必须树立生态道德观，提高正确判断人与自然关系中是与非、善与恶的素养，学会与自然和谐相处。最大限度地减少人为因素导致的生态环境恶化，增强全社会的资源忧患意识和节约资源、保护环境的责任意识，把节约资源、回收利用废弃物等活动变成全体公民的自觉行为，逐步形成节约资源和保护环境的绿色生活方式和消费模式。 
+	</p>
+	<p>
+		二、严格控制人口骤增，鼓励使用可再生资源。我国的基本国情是人口众多、资源相对不足和生态环境承载能力弱，随着经济快速增长和人口的不断增加，能源、水、土地、矿产等资源不足的矛盾日益尖锐，生态环境的形势十分严峻。因此，必须制定与自然承载能力相适应的人口发展规划和政策，提高全社会的计划生育意识，确保控制人口数量、提高人口质量。在鼓励使用可再生资源的同时，控制可再生资源的利用率不能超过其再生和自然增长的限度，提倡少用或不用不可再生资源。 
+	</p>
+	<p>
+		三、发展循环经济，建立节约型社会。必须承认，人类的生存和发展要支付一定的资源和环境代价，关键是这个代价不能过大。我们建设海峡西岸经济区，是在人口密度大、资源较为稀缺的环境下进行的，所以提高资源使用效率，建立资源节约型的社会经济体系对整个社会而言具有战略意义。循环经济遵循“无废论”原则，相对于传统经济的“两高一低”（高消耗、高污染、低利用）而言，循环经济表现为“两低两高”，即：低消耗、低污染、高利用率和高循环率，将清洁生产和废物利用融为一体，实现废物减量化、资源化和无害化，实现经济活动的生态化。从人类发展意义上讲，循环经济是经济、社会、环境整合的经济，是经济和环境的双赢，是实现人与自然和谐相处的重要路径。 
+	</p>
+	<p>
+		四、完善环境与发展综合决策，树立新的政绩观。在制定重大经济政策、建设重大项目、开发改造城市等重大决策前，必须由有关专家对项目实施带来的环境影响进行评价，减少因重大项目的决策失误带来生态环境问题，做到在“源头”将环境污染和生态破坏控制在最低程度；落实科学的发展观，把自然资源和生态环境成本纳入国民经济核算体系，引导人们从单纯追求经济增长逐步转到注重经济、社会、环境、资源协调发展上来。同时以新的指标体系来衡量社会经济的发展，考核各级干部。新的指标体系不仅要反映经济增长的总量水平，更应该反映出经济增长的质量，反映出经济增长过程中环境、生态和资源的代价。人与自然和谐相处，生态环境优美，人类就能够体验到人生的乐趣与自由，这不仅是人类生存发展所必须的，同时也是人类内在的精神享受和审美需求。
+	</p>
+</div>
+</div>
+<script type="text/javascript">
+$(function(){
+	$(".heartPic li").hover(function(){
+		$(this).addClass("on");
+		$(this).find("img").animate({"width":"200px","height":"200px"});
+		$(this).find("div").animate({"width":"200px","height":"200px"});
+		$(this).find(".pTxt").animate({"width":"200px","height":"20px"});
+		$(this).find("p").addClass("showDiv");
+	},function(){
+		$(this).animate({height:"100px"},100).removeClass("on");
+		$(this).find("img").stop(true,true).animate({"width":"100px","height":"100px"});
+		$(this).find("div").stop(true,true).animate({"width":"100px","height":"100px"});
+		$(this).find(".pTxt").stop(true,true).animate({"width":"0px","height":"0px"});
+	});
+})
+</script>
+</body>
+</html>

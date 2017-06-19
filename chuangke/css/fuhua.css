@@ -1,0 +1,310 @@
+  /*统一样式css*/
+  *{margin:0;padding:0;}
+  body{background:#F1F1F1;}
+  /*头部css*/
+	#Top{
+		width:100%;
+		height:500px;
+		background:url("../images/fuhua.jpg");
+		background-repeat:no-repeat;
+		background-size:100% 500px;
+		position:relative;
+	}
+	#Top #Nav{width:1000px;height:60px;margin:0 auto;padding-top:30px;}
+	#Top #Nav .logo{width:120px;height:60px;float:left;font-size:30px;color:#fff;line-height:60px;text-align:center;font-family:"微软雅黑";margin-left:50px;}
+	#Top #Nav .dh{width:520px;height:60px;float:right;
+		line-height:60px;
+	}
+	#Top #Nav .dh ul li{
+		height:60px;
+		text-align:center;
+		float:left;
+		font-size:20px;
+		font-family:"微软雅黑";
+		font-weight: bolder;
+		list-style-type: none;
+		margin-left:20px;
+	}
+	#Top #Nav .dh .aa{width:45px;}
+	#Top #Nav .dh .bb{width:65px;}
+	#Top #Nav .dh .cc{width:80px;}
+	#Top #Nav .dh .dd{width:100px;}
+	#Top #Nav .dh ul a{
+		text-decoration: none;
+		color:#fff;
+	}
+	#Top #Nav .dh ul a:visited{
+		color:#fff;
+	}
+	#Top #Nav .dh ul li:hover{
+		border-bottom:5px solid #DE7C0D;
+		color:#DE7C0D;
+	}
+	#Top #Nav .dh ul .on{
+		border-bottom:5px solid #DE7C0D;
+		color:#DE7C0D;
+	}
+	/*标语CSS样式*/
+	#Top .biaoyu{
+		width:350px;
+		height:190px;
+		margin:0 auto;
+		color:#fff;
+		font-size:20px;
+		font-weight: bolder;
+		font-family: "微软雅黑";
+		line-height:35px;
+		margin-top:210px;
+		margin-left:720px;
+	}
+		
+
+	#Top .biaoyu span{
+		font-size:43px;
+		color:red;
+	}
+		#Top #english{
+		width:200px;
+		height:200px;
+		line-height:200px;
+		position:absolute;
+		top:-75px;
+		right:0px;
+		font-weight:bolder;
+	}
+	#Top #english a{
+		color:#DD2206;
+		text-decoration:none;
+	}
+	#Top #english a:hover{
+		color:#fff;
+	}
+
+	/*这里是主体CSS样式*/
+	#Main{
+		width:1000px;
+		height:auto;
+		margin:0 auto;
+		background:#fff;
+		box-shadow: 0px 0px 10px #ccc;
+		}
+	#Main .fuhua{
+		width:1000px;
+		height:500px;
+		margin:0 auto;
+	}
+	#Main .fuhua .cen{
+		margin:10px auto 10px 400px;
+	}
+	#Main .fuhua .wenben{
+		width:950px;
+		height:350px;
+		margin:0 auto;
+		border:5px solid #fff;
+		font-weight: bolder;
+		border-radius:10px;
+		background: url("../images/bg.jpg")center;
+		-webkit-animation:dql 10s linear infinite alternate;
+		-moz-animation:dql 10s linear infinite alternate;
+		animation:dql 10s linear infinite alternate;
+	}
+	@-webkit-keyframes dql{
+		0%{box-shadow: 0 0 10px #1DDDEE;}
+		25%{box-shadow: 0 0 20px red;}
+		50%{box-shadow: 0 0 30px blue;}
+		75%{box-shadow: 0 0 20px purple;}
+		100%{box-shadow: 0 0 10px green;}
+	}
+	@-moz-keyframes dql{
+		0%{box-shadow: 0 0 10px #1DDDEE;}
+		25%{box-shadow: 0 0 20px red;}
+		50%{box-shadow: 0 0 30px blue;}
+		75%{box-shadow: 0 0 20px purple;}
+		100%{box-shadow: 0 0 10px green;}
+	}
+	#Main .fuhua .wenben .wen{
+		font-size:50px;
+		margin-top:30px;
+		margin-left:200px;
+		color:#fff;
+		text-shadow:0 0 10px #000;
+		transition:0.5s linear;
+	}
+	#Main .fuhua .wenben .wen:hover{
+		cursor: pointer;
+		text-shadow:0 0 10px red;
+	}
+	#Main .fuhua .wenben p{
+		font-size:19px;
+		font-family: "微软雅黑";
+		text-indent: 2em;
+		line-height:40px;
+		transition:2s ease;
+	}
+	#Main .fuhua .wenben p:hover{
+		text-shadow:0 0 10px #1E90CA;
+	}
+#Main .ff{margin-left:400px;margin-top:5px;}
+	/*这里是介绍孵化方法的CSS*/
+	#Con{
+	width:950px;
+	height:550px;
+	margin:0px auto;
+}
+#button2{height:62px; border-radius:5px;width:500px;margin-left:320px;}
+#button2 a{color:#000; font-size:16px; font-family:"微软雅黑";
+		height:35px; width:80px; display:block; float:left; margin-top:10px; text-align:center;
+		line-height:35px; margin-left:15px;cursor: pointer;
+		font-weight: bolder;border-radius: 10px;
+		box-shadow: 0 0 5px #ccc;
+	}
+#button2 a.ck{background:url("images/but.png"); color:#fff;background:#1E90CA;}
+
+#content .txt_con{
+	width:950px;
+	height:420px;
+	display:none;
+}
+#content .txt_con .Left{
+	width:400px;
+	height:400px;
+	margin-top:10px;
+	float:left;
+	border:5px solid #fff;
+	box-shadow: 0 0 10px #ccc;
+	overflow: hidden;
+}
+#content .txt_con .Left img{
+		transition:2s ease;
+		cursor: pointer;
+}
+#content .txt_con .Left:hover img{
+	-webkit-transform: scale(1.3);
+	transform: scale(1.3);
+}
+#content .txt_con .Right{
+	width:540px;
+	height:410px;
+	margin-top:10px;
+	float:right;
+	overflow: hidden;
+}
+#content .txt_con .Right:hover{
+	box-shadow: 0 0 10px red;
+	border-radius: 10px;
+}
+#content .txt_con .Right h1{
+	font-size:22px;
+	text-align:center;
+	margin: 10px auto;
+	font-family:"华文宋体";
+}
+#content .txt_con .Right p{
+	width:500px;
+	margin:0 auto;
+	text-indent: 2em;
+	font-size:15px;
+	font-family:"华文宋体";
+	line-height:28px;
+	transition:0.5s ease;
+}
+#content .txt_con .Right .te{
+	font-size:16px;
+	font-weight:bolder;
+}
+#content .txt_con .Right a{
+	font-size:16px;
+	color:red;
+	margin-left:10px;
+	text-decoration: none;
+}
+#content .txt_con .Right a:hover{
+	color:blue;
+}
+#content .txt_con .Right .cu{
+	font-size:15px;
+	font-family: "微软雅黑";
+	transition:0.5s ease;
+}
+#content .txt_con .Right p:hover{
+	font-size:16px;
+	color:blue;
+	cursor: pointer;
+}
+
+	/*主体footer css样式*/
+	#footer{
+		width:100%;
+		height:150px;
+		background:#262627;
+		padding-top:20px;
+	}
+	#footer #Mid{
+		width:550px;
+		height:130px;
+		margin:0 auto;
+	}
+	#footer #Mid .zuo{
+		width:350px;
+		height:100px;
+		float:left;
+		font-size:16px;
+		border-right:1px solid #fff;
+		margin-top:10px;
+	}
+	#footer #Mid .zuo p{
+		color:#fff;
+		width:350px;
+		height:40px;
+		line-height:30px;
+		text-align:left;
+	}
+	#footer #Mid .zuo span{
+		font-size:18px;
+	}
+	#footer #Mid .you{
+		width:190px;
+		height:120px;
+		float:right;
+		font-size:14px;
+		color:#fff;
+	}
+	#footer #Mid .you .guo{
+		margin-left:70px;
+	}
+	#footer p{
+		color:#fff;
+		font-size:14px;
+		text-align:center;
+	}
+	/*返回头部CSS*/
+	/*returnTop*/
+p#back-to-top{
+    position:fixed;
+    display:none;
+    bottom:100px;
+    right:80px;
+	background:#1E90CA;
+}
+p#back-to-top a{
+    text-align:center;
+    text-decoration:none;
+    color:#d1d1d1;
+    display:block;
+    width:54px;
+}
+p#back-to-top a:hover{
+    color:#979797;
+}
+p#back-to-top a span{
+    background:transparent url(/static/imgs/sprite.png?1202) no-repeat -25px -290px;
+    border-radius:6px;
+    display:block;
+    height:64px;
+    width:56px;
+    margin-bottom:5px;
+
+}
+#back-to-top a:hover span{
+    background:transparent url(/static/imgs/sprite.png?1202) no-repeat -25px -290px;
+}

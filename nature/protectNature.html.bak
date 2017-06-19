@@ -1,0 +1,227 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>保卫自然</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<link rel="stylesheet" type="text/css" href="css/protect.css" />
+<link rel="shortcut icon" href="nature.ico" type="image/x-icon" />
+
+</head>
+<body>
+<div class="topBox">
+ <div class="conWidth">
+ <div id="logo" style="float:left">
+ 	<img src="images/logo.png" width="100" height="80" alt="">
+ </div>
+ <div id="logoText" style="float:left;font-size:25px;font-weight:bold;color:#333;margin-left:10px;font-family:'微软雅黑';line-height:80px;">
+ 	<img src="images/text.png" width="100" height="80" alt="">
+ </div>
+	 <div class="navBox">
+	 	<ul>
+	 		<li>
+	 			<a href="index.html">
+	 				<img src="images/sun.png" width="60" height="60" alt="">
+	 				<span>首页</span>
+	 			</a>
+	 		</li>
+	 		<li>
+	 			<a href="nature_story/nature_beautful.html">
+	 				<img src="images/flower.png" width="60" height="60" alt="">
+	 				<span>自然之美</span>
+	 			</a>
+	 		</li>	
+	 		<li>
+	 			<a href="destroyNature.html">
+	 				<img src="images/tree.png" width="60" height="60" alt="">
+	 				<span>破壁残垣</span>
+	 			</a>
+	 		</li>	 		
+	 		<li>
+	 			<a href="protectNature.html">
+	 				<img src="images/cloud.png" width="60" height="60" alt="">
+	 				<span>保卫自然</span>
+	 			</a>
+	 		</li>	
+	 		<li>
+	 			<a href="peace.html">
+	 				<img src="images/butterfly.png" width="60" height="60" alt="">
+	 				<span>和谐相处</span>
+	 			</a>
+	 		</li>
+	 	</ul>
+	 </div>
+  </div>
+</div>
+<div id="fullpage">
+	<!--第一个页面-->
+	<div class="section" id="sectionOne">
+
+	<pre id="introShow" style="text-align:center;"></pre>
+		<div id="introduceBox" style="display:none;">
+		自然，是人们赖以生存的环境；
+		自然，被人们过度的开垦攫取；
+		自然，它开始变得劳累，开始垮掉；
+		自然，我们的家，
+		自然，我们不应该那么自私，
+		我们，现在，
+		要学会张开双手，
+		去保护你，保护你！
+		</div>
+		<script language="javascript">
+
+		var index=0;
+		var word=document.getElementById("introduceBox").innerHTML;
+		function type(){
+		document.getElementById("introShow").innerText = word.substring(0,index++);
+		}
+		setInterval(type, 200);
+		</script>
+	</div>
+	<!--第二个页面-->
+	<div class="section" id="sectionTwo">
+<div style="margin:0 auto;width:1140px;">
+	<div class="sectionTitle">
+		<h2 style="color:#000;font-family:'微软雅黑';margin-bottom:40px;">保护,从点滴做起！</h2>
+	</div>
+		<div class="box">
+		<div class="he_border1">
+			<img class="he_border1_img" src="images/pro_1.jpg" width="100%" height="100%" alt="Image 01">
+			<div class="he_border1_caption">
+				<h3 class="he_border1_caption_h">节约用水</h3>
+				<p class="he_border1_caption_p">水是生命之源，我们离不开水，所以请从节约开始！</p>
+				<a class="he_border1_caption_a" href="#"></a>
+			</div>
+		</div>
+	</div>
+	<div class="box">
+		<div class="he_3DFlipX">
+			<div class="he_3DFlipX_inner">
+				<div class="he_3DFlipX_img">
+					<img src="images/pro_2.jpg" alt="img01">
+				</div>
+				<div class="he_3DFlipX_caption">
+					<h3>垃圾分类</h3>
+					<p>垃圾的分类，有利于垃圾的回收！</p>
+				</div>
+				<a href="#"></a>
+			 </div>
+		</div>
+	</div>
+	<div class="box">
+		<div class="he_border2">
+			<img class="he_border2_img" src="images/pro_3.jpg" alt="Image 01" width="100%" height="100%">
+			<div class="he_border2_caption">
+				<p class="he_border2_caption_p">减少垃圾袋的使用，让生活更充满绿色。</p>
+				<a class="he_border2_caption_a" href="#"></a>
+			</div>
+		</div>
+	</div>
+</div>
+	</div> 
+	<!--第三个页面-->
+	<div class="section">
+		<div class="slide">
+		<img src="images/pro_11.jpg" alt="Image 01" width="100%" height="100%">
+		</div>
+		<div class="slide">		
+		<img src="images/pro22.jpg" alt="Image 01" width="100%" height="100%">
+		</div>
+		<div class="slide"><img src="images/pro_33.jpg" alt="Image 01" width="100%" height="100%"></div>
+		<div class="slide"><img src="images/pro_44.jpg" alt="Image 01" width="100%" height="100%"></div>
+		<div id="introduceProtect">
+		<center>
+			<h2>致全人类的环保一封信</h2>
+		</center>
+<p>尊敬的人类朋友们：</p>
+<p>还记得我们慈爱的母亲—地球吗?地球原先是一个晶莹透亮的球体,可现在却是一个伤痕累累的球体,地球母亲之所以变成这样,还得问问人类了.</p>
+<p>人类啊,如果你们不给地球和自然留条后路,那它们也不会给人类留条后路的.大自然同是人类慈爱、善良的母亲,但大自然同时也是冷酷的屠夫.</p>
+<p>对于自然与人类的关系,中国自古就有“人定胜天”的说法.中国人历来认为自然就是奴隶,人类才是主人,人类既要与天奋斗,又要与地奋斗,从而达到征服自然目的.因此,我们曾经把人类要征服自然的口号喊得震天响,并且在这种思想的指导下干出了一件件蠢事来.就以长江上游为例,在100年的时间里,长江上游的原始森林被砍伐了80﹪,伐木甚至成了许多地方的支柱性产业.</p>
+<p>还有大自然引以为之自豪的树木,现在也被人类在乱砍滥伐,人类啊!你们不是拥有独特的智慧吗?可现在呢?那些所谓大道理的智慧哪去了?你们知道那些树木对我们有多大的作用吗?</p>
+<p>一亩树林每天可吸收67千克二氧化碳,释放出49千克氧气.一亩树林一个夏季可蒸发42吨水,一年可达300-500吨.一亩树林一年可吸收各种灰尘22-60克.一亩树林一个月可以吸收有毒气体4千克.一亩有林地比一亩无林地多蓄水20吨.一亩防风林可以保护100多亩农田免受风灾.现在该明白树木对我们的作用了吧!</p>
+<p>大自然也是数万儿童的发祥地,大自然是最令儿童向往的地方,大自然是锻炼孩子的观察力、想象力与探索兴趣等的大课堂,为了我们的下一代的健康成长,让我们大家一起行动起来,为我们大家的子孙后代拥有一个良好的环境而努力吧!</p>
+　　<p>没有自然,便没有人类,这是世界一大朴素的真理.一味掠夺自然,征服自然,只会破坏生态平衡,咎由自取,使人类濒于困境!让我们大家一起行动起来,保护好这个我们赖以生存的地球吧!</p>
+		</div>
+	</div>
+	<!--第四个页面-->
+	<div class="section" id="section4">
+<div id="successIntroduce">
+<center>
+	<h2 style="margin-bottom:20px;">人类是大自然的保护者</h2>
+</center>
+<div id="colums">
+<p>中华文明传承五千多年，积淀了丰富的生态智慧。“天人合一”、“道法自然”的哲理思想，“劝君莫打三春鸟，儿在巢中望母归”的经典诗句，“一粥一韫，当恩来处不易；半丝丰缕，恒念物力雏艰”的治家格言，这些质朴睿智的自然观，至今仍给人以深刻警示和启迪。</p>
+<p>我们党一贯高度重视生态文明建设。二十世纪八十年代初，我们就把保护环境作为基本国策。进入新世纪，又把节约资源作为基本国策。多年来，我们大力推进生态环境保护，取得了显著成绩。但是经过三十多年的快速发展，积累下来的生态环境问题日益显现，进入高发频发阶段。比如，奎国江河水系、地下水污染和饮用水安奎问题不客忽视，有的地区重金属、土壤污染比较严重，全国频繁出现大范围长时间的雾霾污染天气，等等。</p>
+<p>这些突出环境问题对人民群众生产生活、身体健康带来严重影响和损害，社会反映强烈，由此引发的群体性事件不断增多。这说明，随着社会发展和人民生活水平不断提高，人民群众对干净的水、清新的空气、安全的食品、优美的环境等的要求越来越高，生态环境
+在群众生活幸福指数中的地位不断凸显，环境问题日益成为重要的民生问题。正像有A所说的，老百姓过去“盼温饱”现在“盼环保”．过去“求生存”现在“求生态”。</p>
+<p>保护生态环境，关系最广大人民的根本利益，关系中华民族发展的长远利益，是功在当代、利在千秋的事业，在这个问题上，我们没有别的选择。必须清醒认识保护生态环境、治理环境污染的紧迫性和艰巨性，清醒认识加强生态文明建设的重要性和必要性．以对人民群众、对子孙后代高度负责的态度，加大力度，攻坚克难，全面推进生态文明建设，实现中华民族永续发展。</p>
+</div>
+</div>
+
+<div id="footer"> 
+	<p>by 韦海燕&刘恒春</p> 
+</div>
+	</div>
+	
+</div>
+<script type="text/javascript" src="js/jquery-1.11.1.js"></script>
+<script type="text/javascript" src="js/jquery.fullPage.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+
+	$('#fullpage').fullpage({
+		
+		sectionsColor:['orange','#5c7ff1','green','#cccccc'], //控制每个section的背景颜色
+		
+		controlArrow:true,   //是否隐藏左右滑块的箭头(默认为true)
+		
+		verticalCentered: true,  //内容是否垂直居中(默认为true)
+		 
+		css3: true, //是否使用 CSS3 transforms 滚动(默认为false)
+		 
+		resize:false, //字体是否随着窗口缩放而缩放(默认为false)
+		
+		scrolllingSpeed:1000,  //滚动速度，单位为毫秒(默认为700)
+		
+		anchors:['page1','page2','page3','page4'],  //定义锚链接(值不能和页面中任意的id或name相同，尤其是在ie下，定义时不需要加#)  
+
+		lockAnchors:false,  //是否锁定锚链接，默认为false。设置weitrue时，锚链接anchors属性也没有效果。
+		
+		loopBottom:false,  //滚动到最底部后是否滚回顶部(默认为false)
+		
+		loopTop:false, //滚动到最顶部后是否滚底部
+		
+		loopHorizontal:false,//左右滑块是否循环滑动
+		
+		autoScrolling:true, // 是否使用插件的滚动方式，如果选择 false，则会出现浏览器自带的滚动条
+		
+		scrollBar:false,//是否显示滚动条，为true是一滚动就是一整屏
+		
+		fixedElements:".logo", //固定元素
+		
+		menu:".menu",
+		
+		keyboardScrolling:true, //是否使用键盘方向键导航(默认为true)
+		
+		keyboardScrolling:true, //页面是否循环滚动（默认为false）
+		
+		navigation:true, //是否显示项目导航（默认为false）
+		
+		navigationTooltips:["page1","page2","page3","page4"],//项目导航的 tip
+		
+		navigationColor:'#fff', //项目导航的颜色
+		
+		slidesNavigation:true,
+		
+	});
+
+});
+</script>
+
+</body>
+</html>

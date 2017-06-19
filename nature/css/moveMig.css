@@ -1,0 +1,72 @@
+
+#playimages ul{padding: 0;margin: 0;}
+#playimages li{outline-style: none;}/*属性用于设置元素的整个轮廓的样式。样式不能是 none,否则轮廓不会出现。*/
+#playimages img{border: 0;}
+/*大相框*/
+.play{
+	position: absolute;
+	top:70px;
+	width: 100%;
+	height:350px;
+	margin: 50px auto;
+	font: 12px Arial;
+}
+
+.big_pic{
+	width: 100%;
+	height: 350px;
+	overflow: hidden;
+	border-bottom: 1px solid #ccc;
+	position: relative;
+}
+.big_pic img{
+	width: 100%;
+	height: 350px;
+}
+.big_pic li{
+	width: 100%;
+	height: 350px;
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 0;
+	background: url(../images/b4.png)no-repeat center center;
+}
+.mark_left{
+	width: 50%;
+	height: 350px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	opacity: 0;
+	z-index: 3000;
+}
+.mark_right{
+	width: 50%;
+	height: 350px;
+	position: absolute;
+	left: 50%;
+	top:0;
+	opacity: 0;
+	z-index: 3000;
+}
+.small_pic{
+	position: relative;
+
+}
+.small_pic ul{
+	
+	list-style: none;
+
+}
+.small_pic li{
+	width:30px;
+	height:30px;
+	float: left;
+   background-color: red;
+	cursor: pointer;
+	border-radius: 60% 0;
+	opacity: 0.6;
+}
+

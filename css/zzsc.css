@@ -1,0 +1,38 @@
+/* css 重置 */
+body,div,ul,li,h2,span,p { padding: 0; margin: 0; }
+body { font-family:Arial, Helvetica, sans-serif; }
+.clearfix:after { content :" "; clear: both; height: 0; visibility: hidden; display: block; }
+.clearfix { *zoom:1; }
+ul { list-style: none ; }
+img { border: none; }
+a { blr: expression(this.onFocus=this.blur()); outline: none; text-decoration:none; }
+
+/*本实例 css*/
+.warpper { height: 550px; background: #eee; }
+.workChoice { width: 900px; margin:0 auto; overflow:hidden;}
+.qirepic { width:890px; height: 400px; color:#333; margin-top: 20px; float: left; }
+.qirepic ul li img { width: 300px; height: 300px; border: 2px #eee solid; }
+.qirepic ul li a.qirepic-silder-img { display: block; /* width: 205px; */ border: 3px #ccc solid; float: left; }
+.qirepic-silder-intro { /* height: 310px; */ width: 570px; float: left; padding-left: 15px; }
+
+.qirepic-silder-title { line-height: 30px; padding: 10px 0 14px 0; }
+.qirepic-silder-title h2 a { color: #333; font-size: 26px; font-weight: normal; font-family:"Microsoft Yahei" }
+.qirepic-silder-title h2 a:hover { text-decoration:underline; }
+.qirepic-silder-title span { color: #FF6600; font-size: 14px; }
+
+.qirepic-silder-info li,.qirepic-silder-desc { font-size: 14px; color: #333; }
+.qirepic-silder-info li {  height: 25px;  overflow:hidden; float: left; }
+.qirepic-silder-info li span,.qirepic-silder-desc span { color: #333; }
+.qirepic-silder-info li.long { width: 400px; margin-bottom: 5px; }
+.qirepic-silder-desc { display:block; line-height:20px; padding-bottom: 10px; overflow: hidden; }
+ 
+.qirepic-silder-play { display: block; width: 136px; height: 29px; background:url(../images/silder-play.png) no-repeat; text-indent:-9999px;}
+.qirepic-silder-play:hover { background-position: 0 -30px; }
+
+/*图片导航*/
+.num { width:1000px; background: #ccc; padding: 10px; margin-top: 32px; float: left; overflow:hidden; }
+.num ul { /* width: 300px; */ }
+.num li { float: left; margin: 0 5px 5px 0px; }
+.num li a { display:block; border: 2px #9D75B1 solid; padding: 1px; }
+.num li img { width: 87px; height: 87px; }
+.num li.on a { border: 2px #FF6600 solid; } /*当前项*/

@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>关于我们</title>
+  <link rel="stylesheet" href="css/about.css" />
+ </head>
+ <body>
+ <!-- 这里是头部 -->
+  	<div id="Top">
+  	 <!-- 这里是导航 -->
+  		<div id="Nav">
+  			<div class="logo">
+				我是创客  				
+  			</div>
+  			<div class="dh">
+  			<ul>
+  				<a href="index.html"><li class="aa">首页</li></a>
+  				<a href="lishi.html"><li class="bb">创客史</li></a>
+  				<a href="home.html"><li class="cc">创客家园</li></a>
+  				<a href="fuhua.html"><li class="dd">创客孵化园</li></a>
+  				<a href="about.html"><li class="cc on">关于我们</li></a>
+  			</ul>
+  			</div>
+  		</div>
+	<!-- 中英文切换 -->
+	<div id="english">
+		<a href="about.html">中文版</a>
+		<a href="english/about.html">英文版</a>
+	</div>
+  	</div>
+    	<!-- 这里是主体 -->
+	<div id="Main">
+		<div class="mxp1">
+			<p>吴秀芳</p>
+			<p class="wen">
+				早茶月光落在我头发，影子一直默默陪在身后……
+			</p>
+		</div>
+		<div class="mxp2">
+		 <p>刘恒春</p>
+			<p class="wen">
+				一人一景，喜欢走走停停，记录美好瞬间
+			</p>
+		</div>
+		<div class="mxp3">
+			<p>韦云艳</p>
+			<p class="wen">
+				若迷失，若害怕，抬头吧，有星空为我们照亮前方！
+			</p>
+		</div>
+		<div class="mxp4">
+			<p>余雨倩</p>
+			<p class="wen">
+			正儿四经，一般可爱一般温柔一般成熟一般自恋
+			</p>
+		</div>
+	</div>
+	<!-- 这里是底部footer部分 -->
+  	<div id="footer">
+  	<!-- 这里是底部footer字部分 -->
+		<div id="Mid">
+		<!-- 这里是底部footer左边部分 -->
+			<div class="zuo">
+				<p><span>指导老师:</span>罗日才</p>
+				<p><span>制作人:</span>刘恒春、吴秀芳、韦云艳、余雨倩</p>
+			</div>
+		<!-- 这里是底部footer右边部分 -->
+			<div class="you">
+				关注我们:<br>
+				<img src="images/er.png" class="guo">
+			</div>
+		</div>
+		<p>版权:由河池学院13计技班You柠檬© 所有</p>
+  	</div>
+
+  	  	  	<!-- 返回头部 -->
+  	<p id="back-to-top"><a href="#top"><img src="images/back.jpg" title="返回顶部"></a></p>
+  	<script src="js/jquery-1.7.2.min.js"></script>
+<script>
+$(function(){
+        //当滚动条的位置处于距顶部100像素以下时，跳转链接出现，否则消失
+        $(function () {
+            $(window).scroll(function(){
+                if ($(window).scrollTop()>100){
+                    $("#back-to-top").fadeIn(500);
+                }
+                else
+                {
+                    $("#back-to-top").fadeOut(500);
+                }
+            });
+            //当点击跳转链接后，回到页面顶部位置
+            $("#back-to-top").click(function(){
+                $('body,html').animate({scrollTop:0},500);
+                return false;
+            });
+        });
+    });
+</script>
+ </body>
+</html>

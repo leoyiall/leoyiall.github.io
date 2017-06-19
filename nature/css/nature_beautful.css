@@ -1,0 +1,693 @@
+*{margin: 0 ;padding: 0;}
+#main{
+position: relative;
+}
+.nav_sty{
+width: 100%;
+height: 70px;
+background: #ccc;
+top:0;
+position: fixed;
+z-index: 6000;
+}
+.list{
+list-style: none;
+position: absolute;
+top:35%;
+right:0;
+float: right;
+}
+.list>li{
+display: inline-block;
+/*设置 a过度的对象，时间，过度 方式*/
+-webkit-transition: all 0.8s ease-in;
+-moz-transition: all  0.8s ease-in;
+-o-transition: all  0.8s ease-in;
+-ms-transition: all  0.8s ease-in;
+transition: all  0.8s ease-in;
+
+} 
+/*使得每个菜单会动*/
+
+.list li:hover{
+/*设置li旋转一定的角度*/
+
+-webkit-transform:rotate(45deg);
+-moz-transform:rotate(45deg);
+-o-transform:rotate(45deg);
+-ms-transform:rotate(45deg);
+transform:rotate(45deg);
+
+}
+.list li{
+display: inline-block;
+float: left;
+margin-right: 50px;
+}
+a:link{
+color: black;
+font-size: 25px;
+font-weight: bold;
+/*设置立体的字体*/
+color: rgba(231,249,33,1);
+text-shadow:4px 1px 3px rgba(13,180,111,1);
+text-decoration: none;
+}
+a:visited{
+color: green;
+}
+.first_a{
+position: absolute;
+display: inline-block;
+float: left;
+left:20px;
+top: 35%;
+}
+.t_0{
+width: 100%;
+height: 450px;
+background: url(../images/t4.png);
+background-size: 100%;
+}
+.img_show{
+width: 100%;
+height: 450px;
+padding-top: 50px;
+background: url(../images/hua1.png);
+background-size: 100%;
+
+}
+.img_show ul{
+width: 100%;
+list-style: none;
+}
+.img_show ul li{
+float: left;
+width: 50px;
+height: 50px;
+border-radius: 60% 0;
+text-align: center;
+line-height: 50px;
+background-color: rgba(254,254,254,0.3);
+margin-left: 10%;
+}
+.img_show ul li p{
+
+font-family: "楷体";
+color: #fff;
+font-size: 30px;
+position: absolute;
+-webkit-background-size:cover;
+-o-background-size:cover;
+background-size: cover;
+
+-webkit-transition:-webkit-transform .5s ease-in,background.5s ease-in;
+-moz-transition:-moz-transform .5s ease-in,background .5s ease-in;
+-o-transition:-o-transform .5s ease-in,background .5s ease-in;
+transition:transform .5s ease-in,background .5s ease-in;
+
+}
+.img_show ul li p:hover{
+-webkit-transform:rotate(360deg) scale(2,2);
+-moz-transform:rotate(360deg) scale(2,2);
+-o-transform:rotate(360deg) scale(2,2);
+-transform:rotate(360deg) scale(2,2);
+}
+.show_p{
+text-align: left;
+font-family: "楷体";
+font-size: 25px;
+text-indent: 2em;
+padding-top: 25px;
+margin: auto 200px;
+padding-bottom: 25px;
+}
+
+/*---------css3特效图片翘边效果-----------*/
+.ul_img{
+
+width:1200px;
+height: auto;
+clear: both;
+margin: 20px auto;
+overflow: hidden; 
+
+}
+.li_img{
+position: relative;
+background: #fff;
+width: 300px;
+height: 320px;
+float: left;
+margin: 20px 20px;
+list-style: none;
+border: 1px solid #efefef;
+/*给li的内外设置阴影*/
+/*给li的内外设置阴影*/
+-webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.27),0 0 60px rgba(0,0,0,0.01) inset;
+-o-box-box-shadow: 0 1px 9px rgba(0,0,0,0.8),0 0 90px rgba(0,0,0,0.01) inset;
+-moz-box-shadow: 0 1px 9px rgba(0,0,0,0.8),0 0 90px rgba(0,0,0,0.01) inset;
+box-shadow: 0 1px 9px rgba(0,0,0,0.8),0 0 90px rgba(0,0,0,0.01) inset;
+}
+.li_img  img{
+display: block;
+width: 280px;
+height: 200px;
+margin: 8px;
+
+}
+.li_img:before{
+/*使他在底层*/
+z-index: -1;
+content:'';/*内容为空*/
+/*设置块的大小*/
+width: 90%;
+height: 80%;
+position: absolute;
+bottom: 10px;
+left: 20px;
+background: transparent;
+/*使他变换为平行四边形*/
+-webkit-transform:skew(11deg) rotate(3deg);
+-o-transform:skew(11deg) rotate(3deg);
+-moz-transform:skew(11deg) rotate(3deg);
+transform:skew(11deg) rotate(3deg);
+/*阴影效果*/
+box-shadow: 10px 20px 6px rgba(0,0,0,0.4);
+-webkit-box-shadow: 10px 20px 6px rgba(0,0,0,0.4);
+-o-box-shadow: 10px 20px 6px rgba(0,0,0,0.4);
+-moz-box-shadow: 10px 20px 6px rgba(0,0,0,0.4);
+
+
+}
+.li_img:after{
+/*使他在底层*/
+z-index: -1;
+content:'';/*内容为空*/
+/*设置块的大小*/
+width: 90%;
+height: 86%;
+position: absolute;
+bottom: 10px;
+right: 17px;
+background: #ccc;
+/*使他变换为平行四边形*/
+-webkit-transform:skew(-11deg) rotate(-3deg);
+-o-transform:skew(-11deg) rotate(-3deg);
+-moz-transform:skew(-11deg) rotate(-3deg);
+transform:skew(-11deg) rotate(-3deg);
+/*阴影效果*/
+-webkit-box-shadow: 10px 20px 6px rgba(0,0,0,0.4);
+-o-box-shadow: 10px 20px 6px rgba(0,0,0,0.4);
+-moz-box-shadow: 10px 20px 6px rgba(0,0,0,0.4);
+box-shadow: 10px 20px 6px rgba(0,0,0,0.4);
+} 
+.li_img:hover img{
+transform:scale(1.2,1);
+-webkit-transform:scale(1.2,1);
+-moz-transform:scale(1.2,1);
+-o-transform:scale(1.2,1);
+}
+.li_img p{
+text-align: left;
+margin-right: 10%;
+margin-left: 10%;
+margin-top:5px;
+text-indent: 2em;
+font-family: "楷体";
+font-weight: bold;
+
+
+} 
+.visit_beaut{
+margin-top:70px; 
+width: 100%;
+height: 800px;
+}   
+/*---------css3特效图片变换效果-----------*/
+/*让标题浮动上去*/
+figure{position: relative;width: 16.65%;overflow: hidden;height: 380px;float: left;}
+/*制作虚的页面效果*/
+figure img{opacity: 0.8;width: 105%;height: 380px;}
+figcaption{position: absolute;top:0px;left: 0px;color: #fff;
+font-family: "微软雅黑";}
+figure figcaption p,h2,span,img,div{
+transition:all 0.35s;
+-webkit-transition:all 0.35s;
+-moz-transition:all 0.35s;
+-o-transition:all 0.35s;
+}
+/*响应式布局*/
+@media screen and (max-width: 100px){
+figure{width: 100%;}
+}
+@media screen and (min-width: 101px) and (max-width:1000px){
+figure{width: 50%;}
+}
+@media screen and (min-width: 10001px){
+figure{width:50%;}
+}
+/**/
+.test1{
+background: #2F0000;
+}
+.test1 figcaption p{color:#fff; margin-top: 20px;text-align: center;
+transform:translate(-210px,0px);
+-webkit-transform:translate(-210px,0px);
+-o-transform:translate(-210px,0px);
+-moz-transform:translate(-210px,0px);
+}
+.test1 figcaption{padding: 10px;}
+/*制作动画效果*/
+.test1:hover figcaption p{
+transform:translate(0px,0px);
+-moz-transform:translate(0px,0px);
+-webkit-transform:translate(0px,0px);
+-o-transform:translate(0px,0px);
+
+}
+.test1 figcaption p:nth-of-type(1){/*nth-of-type(1):表示同级的p标签的兄弟元素第一个兄弟*/
+transition-delay:0.05s;
+-webkit-transition-delay:0.05s;
+-moz-transition-delay:0.05s;
+-o-transition-delay:0.05s;
+
+}
+.test1 figcaption p:nth-of-type(2){
+transition-delay:0.1s;
+-webkit-transition-delay:0.1s;
+-moz-transition-delay:0.1s;
+-o-transition-delay:0.1s;
+}
+.test1 figcaption p:nth-of-type(3){
+transition-delay:0.15s;
+-webkit-transition-delay:0.15s;
+-moz-transition-delay:0.15s;
+-o-transition-delay:0.15s;
+}
+.test1:hover img{
+transform:translate(-50px,0px);opacity: 0.5;
+-webkit-transform:translate(-50px,0px);opacity: 0.5;
+-moz-transform:translate(-50px,0px);opacity: 0.5;
+-o-transform:translate(-50px,0px);opacity: 0.5;
+}
+
+.test2{background: #030;}
+.test2 figcaption{width: 100%;height: 100%;}
+.test2 figcaption h2{
+margin-top: 4%;
+margin-left: 15%;
+}
+.test2 figcaption p{
+margin-top: 40px;
+margin-left: 15%;
+transform:translate(0px,50px);
+-webkit-transform:translate(0px,50px);
+-moz-transform:translate(0px,50px);
+-o-transform:translate(0px,50px);
+opacity: 0;
+}
+.test2 figcaption div{
+border: 2px solid #fff;width: 80%;
+height: 80%;
+position: absolute;
+top:15%;
+left: 10%;
+transform:translate(0px,-450px) rotate(0deg);
+-webkit-transform:translate(0px,-450px) rotate(0deg);
+-moz-transform:translate(0px,-450px) rotate(0deg);
+-o-transform:translate(0px,-450px) rotate(0deg);
+
+
+}
+.test2:hover figcaption div{
+transform:translate(0px,0px) rotate(360deg);
+-webkit-transform:translate(0px,0px) rotate(360deg);
+-moz-transform:translate(0px,0px) rotate(360deg);
+-o-transform:translate(0px,0px) rotate(360deg);
+}
+
+.test2:hover img{opacity: 0.5;}
+.test2:hover figcaption p{
+transform:translate(0px,0px);
+-webkit-transform:translate(0px,0px);
+-moz-transform:translate(0px,0px);
+-o-transform:translate(0px,0px);
+opacity: 1;}
+
+.test3{background: #000;}
+.test3 figcaption{top: 25%;left: 8%;}
+.test3 figcaption h2{
+ text-align: left;
+transform:skew(90deg);
+-webkit-transform:skew(90deg);
+-moz-transform:skew(90deg);
+-o-transform:skew(90deg);
+
+}
+.test3 figcaption p{
+	margin-right: 5px;
+text-align:left;
+text-indent: 2em;
+transform:skew(90deg);
+-webkit-transform:skew(90deg);
+-moz-transform:skew(90deg);
+-o-transform:skew(90deg);
+
+}
+.text3:hover img{opacity: 0.5;}
+.test3:hover figcaption h2{
+transform:skew(0deg);
+-webkit-transform:skew(0deg);
+-moz-transform:skew(0deg);
+-o-transform:skew(0deg);
+
+}
+/*制作斜切效果*/
+.test3:hover figcaption p{
+transform:skew(0deg);
+-webkit-transform:skew(0deg);
+-moz-transform:skew(0deg);
+-o-transform:skew(0deg);
+
+transition-delay:0.1s;
+-webkit-transition-delay:0.1s;
+-moz-transition-delay:0.1s;
+-o-transition-delay:0.1s;
+}
+.test4{background: #000;}
+.test4 figcaption h2{
+text-align: left;
+margin-top: 20%;margin-left: 15%;
+transform:scale(1.2,1.2); 
+-webkit-transform:scale(1.2,1.2); 
+-moz-transform:scale(1.2,1.2); 
+-o-transform:scale(1.2,1.2); 
+opacity:0;        
+}
+.test4 figcaption p{
+text-align: left;
+margin-top: 10%;margin-left: 15%;
+margin-right: 15%;
+transform:scale(1.2,1.2); 
+-webkit-transform:scale(1.2,1.2); 
+-moz-transform:scale(1.2,1.2); 
+-o-transform:scale(1.2,1.2); 
+opacity: 0;
+}
+.test4 figcaption{width: 100%;height: 100%;}
+.test4 figcaption div{
+border: 2px solid #fff;
+width: 80%;
+height: 80%;
+position: absolute;
+top:10%;
+left: 10%;
+transform:scale(1.2,1.2);
+-webkit-transform:scale(1.2,1.2);
+-moz-transform:scale(1.2,1.2);
+-o-transform:scale(1.2,1.2);
+opacity: 0;
+
+}
+.test4:hover figcaption div{
+transform:scale(1,1);
+-webkit-transform:scale(1,1);
+-moz-transform:scale(1,1);
+-o-transform:scale(1,1);
+opacity: 1;
+}
+.test4:hover img{opacity: 0.5;
+transform:scale(1.2,1.2);
+-webkit-transform:scale(1.2,1.2);
+-moz-transform:scale(1.2,1.2);
+-o-transform:scale(1.2,1.2);
+}
+.test4:hover figcaption h2{
+transform:scale(1,1);
+-webkit-transform:scale(1,1);
+-moz-transform:scale(1,1);
+-o-transform:scale(1,1);
+opacity: 1;
+}
+.test4:hover figcaption p{
+transform:scale(1,1);
+-webkit-transform:scale(1,1);
+-moz-transform:scale(1,1);
+-o-transform:scale(1,1);
+opacity: 1;
+transition-delay:0.1s;
+-webkit-transition-delay:0.1s;
+-moz-transition-delay:0.1s;
+-o-transition-delay:0.1s;
+}
+.test5 figcaption{width: 100%;height: 100%;}
+.test5 figcaption div {
+width:100%;
+height:100%;
+padding-left: 50px;
+color: black;
+position: absolute;
+top:100%;
+left:0;
+transform-origin:top left;
+-webkit-transform-origin:top left;
+-moz-transform-origin:top left;
+-o-transform-origin:top left;
+background:rgba(255,255,255,0.8);
+
+transform:skew(0deg,0deg);
+-webkit-transform:skew(0deg,0deg);
+-moz-transform:skew(0deg,0deg);
+-o-transform:skew(0deg,0deg);
+
+}
+
+.test5:hover figcaption div {
+transform:skew(0deg,-30deg);
+-webkit-transform:skew(0deg,-30deg);
+-moz-transform:skew(0deg,-30deg);
+-o-transform:skew(0deg,-30deg);
+opacity: 1;
+
+}
+.test5 figcaption h2{
+
+position: absolute;
+margin-top: 15%;
+margin-left: 5%;
+font-size: 20px;
+transform:translate(30px,30px);
+-webkit-transform:translate(30px,30px);
+-moz-transform:translate(30px,30px);
+-o-transform:translate(30px,30px);
+opacity: 0;
+}
+.test5:hover figcaption h2{
+opacity: 1;
+transform:translate(0px);
+-webkit-transform:translate(0px);
+-moz-transform:translate(0px);
+-o-transform:translate(0px);
+
+transition-delay:0.1s;
+-webkit-transition-delay:0.1s;
+-moz-transition-delay:0.1s;
+-o-transition-delay:0.1s;
+}
+.test5 figcaption p{
+position: absolute;
+
+color: #fff;
+font-weight: bold;
+opacity: 0;
+top:60%;
+left: 60%;
+transform:translate(0px,0px);
+-moz-transform:translate(0px,0px);
+-webkit-transform:translate(0px,0px);
+-o-transform:translate(0px,0px);
+
+}
+.test5:hover{
+background:#47e616;
+}
+.test5:hover figcaption p{
+opacity: 1;
+transform:translate(6px,6px);
+-moz-transform:translate(6px,6px);
+-webkit-transform:translate(6px,6px);
+-o-transform:translate(6px,6px);
+
+transition-delay:0.1s;
+-webkit-transition-delay:0.1s;
+-moz-transition-delay:0.1s;
+-o-transition-delay:0.1s;
+
+}
+.test5 img{
+transform:translate(0px,0px);
+-moz-transform:translate(0px,0px);
+-webkit-transform:translate(0px,0px);
+-o-transform:translate(0px,0px);
+}
+.test5:hover img{
+transform:translate(-10px,0px);
+-moz-transform:translate(-10px,0px);
+-webkit-transform:translate(-10px,0px);
+-o-transform:translate(-10px,-0px);
+
+}
+.test6{
+background: #f40f2a;
+}
+.test6 figcaption{width: 100%;height: 100%;}
+.test6 figcaption div:nth-of-type(1){
+width: 60%;
+height: 60%;
+position: absolute;
+top: 20%;
+left: 21%;
+border-top: 2px solid #fff;
+border-bottom: 2px solid #fff;
+
+transform:scale(0,1);
+-webkit-transform:scale(0,1);
+-moz-transform:scale(0,1);
+-o-transform:scale(0,1);
+}
+.test6:hover figcaption div:nth-of-type(1){
+transform:scale(1.2,1);
+-webkit-transform:scale(1.2,1);
+-moz-transform:scale(1.2,1);
+-o-transform:scale(1.2,1);
+}
+.test6 figcaption div:nth-of-type(2){
+width: 60%;
+height: 62%;
+position: absolute;
+top: 20%;
+left: 20%;
+border-left: 2px solid #fff;
+border-right:2px solid #fff;
+
+transform:scale(1,0);
+-webkit-transform:scale(1,0);
+-moz-transform:scale(1,0);
+-o-transform:scale(1,0);
+}
+.test6:hover figcaption div:nth-of-type(2){
+transform:scale(1,1.2);
+-webkit-transform:scale(1,1.2);
+-moz-transform:scale(1,1.2);
+-o-transform:scale(1,1.2);
+
+}
+.test6:hover{opacity:0.8;}
+.test6:hover img{
+transform:scale(1.2);
+-webkit-transform:scale(1.2);
+-moz-transform:scale(1.2);
+-o-transform:scale(1.2);
+
+}
+.test6 figcaption h2{
+text-align: left;
+margin-top: 20%;
+margin-left: 31%;
+opacity: 0;
+}
+.test6 figcaption p{
+text-align: left;
+margin-left: 27%;
+margin-top: 10%;
+opacity: 0;
+}
+.test6:hover figcaption p{
+transform:scale(1.1);
+-webkit-transform:scale(1.1);
+-moz-transform:scale(1.1);
+-o-transform:scale(1.1);
+opacity: 1;
+}
+.test6:hover figcaption h2{
+transform:scale(1.1);
+-webkit-transform:scale(1.1);
+-moz-transform:scale(1.1);
+-o-transform:scale(1.1);
+opacity: 1;
+}
+
+/*-----------图片向上移动-----------------*/
+
+
+/*--------------------------*/
+
+.nature_img{
+
+overflow: hidden;
+}
+#num{
+display:none;
+}
+#num li{
+
+list-style: none;
+width: 20px;
+height: 20px;
+margin-top: 25px;
+display: block;
+background-color: white;
+border-radius: 100%;
+z-index: 101;
+}
+.nature_li img{
+width: 100%;
+height: 100%;
+position: absolute;
+width: 306px;
+height: 226px;
+-webkit-background-size:cover;
+-o-background-size:cover;
+background-size: cover;
+
+-webkit-transition:-webkit-transform .5s ease-in,background.5s ease-in;
+-moz-transition:-moz-transform .5s ease-in,background .5s ease-in;
+-o-transition:-o-transform .5s ease-in,background .5s ease-in;
+transition:transform .5s ease-in,background .5s ease-in;
+}
+.nature_li img:hover{
+-webkit-transform:rotate(360deg) scale(1,2);
+-moz-transform:rotate(360deg) scale(1,2);
+-o-transform:rotate(360deg) scale(1,2);
+-transform:rotate(360deg) scale(1,2);
+
+}
+.img_shadow{
+width: 100%;
+height: 100px;
+margin: 0 auto;
+position: relative;
+}
+.img_shadow p{
+width: 200px;
+height: 20px;
+display: block;
+font-family: "楷体";
+text-align: center;
+line-height: 20px;
+border-radius: 20%;
+color: black;
+position: absolute;
+top:5px;
+left: 45%;
+font-weight: bold;
+-webkit-box-reflect:below 1px -webkit-gradient(linear,left top,
+left bottom,from(transparent),color-stop(0.2,transparent),
+color-stop(0.2,transparent),to(white));
+
+}
+
+
+
+

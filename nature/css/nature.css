@@ -1,0 +1,162 @@
+*{margin: 0;padding: 0}
+
+.main{height:100%;}
+/*导航-------------------------------*/
+.nav_sty{
+	width: 100%;
+	height: 70px;
+	background: #ccc;
+	position: fixed;
+	z-index: 4;
+}
+.list{
+	list-style: none;
+	position: absolute;
+	top:35%;
+	right:0;
+    float: right;
+}
+.list>li{
+     display: inline-block;
+ /*设置 a过度的对象，时间，过度 方式*/
+      -webkit-transition: all 0.8s ease-in;
+	  -moz-transition: all  0.8s ease-in;
+	  -o-transition: all  0.8s ease-in;
+	  -ms-transition: all  0.8s ease-in;
+	  transition: all  0.8s ease-in;
+     
+} 
+   /*使得每个菜单会动*/
+
+  .list li:hover{
+  	/*设置li旋转一定的角度*/
+  	
+   	-webkit-transform:rotate(45deg);
+	  -moz-transform:rotate(45deg);
+	  -o-transform:rotate(45deg);
+	  -ms-transform:rotate(45deg);
+	  transform:rotate(45deg);
+
+   }
+.list li{
+	display: inline-block;
+	float: left;
+	margin-right: 50px;
+}
+a:link{
+	color: black;
+	font-size: 25px;
+	font-weight: bold;
+	/*设置立体的字体*/
+	color: rgba(231,249,33,1);
+	text-shadow:4px 1px 3px rgba(13,180,111,1);
+    text-decoration: none;
+}
+a:visited{
+	color: green;
+}
+.first_a{
+	position: absolute;
+	display: inline-block;
+	float: left;
+	left:20px;
+	top: 35%;
+}
+/*导航-----------end-----------*/
+.sight{
+	position: fixed;
+	float: left;
+	top:70px;
+	width: 100%;
+    height: 100%;
+	z-index:2;
+	background-image: url("../images/a0.jpg");
+	background-size: 100%;
+}
+.s_0{
+	position: absolute;
+	bottom: 100px;
+	left: 50%;
+	display: block;
+	font-size: 30px;
+	text-align: center;
+	line-height: 50px;
+	width: 50px;
+	height: 50px;
+	border-radius: 100%;
+	background-color: #ccc;
+}
+.p_0{visibility:hidden;
+	position: absolute;
+	color: white;
+	left:49.5%;
+	bottom: 80px;
+ }
+ .s_0:hover {
+     opacity: 0.6;
+ }
+ @-webkit-keyframes changcolor{
+ 	0%{background-image:url(../images/a0.jpg);}
+ 	10%{background-image:url(../images/hy2.png);}
+ 	20%{background-image:url(../images/a1.png);}
+ 	30%{background-image:url(../images/a2.png);}
+ 	40%{background-image:url(../images/cy1.png);}
+ 	50%{background-image:url(../images/i8.png);}
+ 	60%{background-image:url(../images/拉萨1.png);}
+ 	70%{background-image:url(../images/m7.png);}
+ 	80%{background-image:url(../images/t4.png);}
+ 	90%{background-image:url(../images/xh1.png);}
+ 	100%{background-image:url(../images/u6.png);}
+ }
+
+.sight:hover{
+	-webkit-animation:changcolor 30s ease-in  .5s;
+}
+
+#sight_roll{
+  position: absolute;
+  top:1000px;
+  background-color: white;
+  z-index: 3;
+
+}
+
+#sight_roll ul li{list-style: none;}
+#sight_roll .img_list{
+	width: 100%;
+}
+ .img_list .p_list{
+
+ 	margin-top: 50px;
+ 	font-size: 25px;
+ 	font-family: "楷体";
+	display: block;
+	margin-left: 40px;
+	height: 250px;
+	width: 10px;
+	float: left;
+
+}
+.iz{
+     padding-top:50px;
+   }
+ .p_div{
+ 	height: 100%;
+ 	border:1px solid #ccc;
+ }
+#sight_roll .img_list li{
+	width: 100%;
+	height: 350px;
+	display: inline-block;
+	border:1px solid #ccc;
+    background: white;
+}
+#sight_roll img{
+	width: 100%;
+	height: 350px;
+}
+#sight_roll .img_list .img_li:hover{
+	background-color: black;
+    opacity: 0.8;
+    
+}

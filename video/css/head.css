@@ -1,0 +1,83 @@
+.index_top{width:100%;margin-bottom:2px;background-color: #fff;}
+.index_login{background-color: #ebebeb;height:36px;border-bottom: 1px solid #ddd;}
+.index_login a{
+	float: right;
+	line-height: 30px;
+	font-size: 14px;
+	color:#0190D4;
+	margin-right:20px;
+	border:1px solid #ccc;
+	border-radius: 3px;
+	padding-left:10px;
+	padding-right:10px;
+	background-color: #fff;
+	margin-top:2px;
+}
+.index_login a:hover{
+	background-color: #ebebeb;
+}
+.index_mid{
+	overflow: hidden;
+	*zoom:1;
+	height:110px;
+}
+.index_mid .index_logo{
+	margin:20px auto 30px 0px;
+}
+.index_title{
+	line-height: 60px;
+	margin-left:5px;
+	font-family: "微软雅黑";
+}
+.index_title h3{
+	font-size:25px;
+	font-weight: 500;
+}
+.index_soso{
+	float: right;
+}
+.index_soso .soso_text{
+	width:300px;
+	height:32px;
+	/*background-color: #ebebeb;*/
+	outline: none;
+	border: 1px solid #ddd;
+	padding-left: 3px;
+	margin-right: 0px;
+}
+.index_soso .soso_sub{
+	padding-left:20px;
+	padding-right:20px;
+	background-color:#0190D4;
+	color:#fff;
+	height:34px;
+	line-height: 34px;
+	outline: none;
+	border: none;
+	cursor: pointer;
+	margin-left:-5px;
+	font-weight: 600;
+}
+.soso_sub:hover{
+	background-color: #0AA0E8;	
+}
+.index_nav{
+	background-color: #0190D4;
+	height:50px;
+	line-height: 50px;
+}
+.index_nav a{
+	display: block;
+	padding-left:20px;
+	padding-right:20px;
+	color:#fff;
+	/*font-weight: 600;*/
+	font-family: "微软雅黑";
+	float:left;
+}
+.index_nav a:hover{
+	background-color: #0AA0E8;
+}
+.active{
+	background-color: #0AA0E8;
+}

@@ -1,0 +1,277 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<meta name="description" content="Animated Content Tabs with CSS3" />
+<meta name="keywords" content="tabs, css3, transition, checked, pseudo-class, label, css-only, sibling combinator" />
+<meta name="author" content="Codrops" />
+<title>破壁残垣</title>
+
+<link rel="stylesheet" type="text/css" href="css/protect.css" />
+<!-- bootstrap的样式 -->
+<link href="css/bootstrap.css"rel="stylesheet" />
+<link rel="stylesheet" type="text/css" href="css/default.css">
+<!-- css3文本样式 -->
+<link rel="stylesheet" type="text/css" href="css/demo.css" />
+<link rel="stylesheet" type="text/css" href="css/style2.css" />
+<script type="text/javascript" src="js/modernizr.custom.04022.js"></script>
+<link rel="shortcut icon" href="nature.ico" type="image/x-icon" />
+<!-- <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700,300,300italic' rel='stylesheet' type='text/css'> -->
+</head>
+<body>
+<!-- 头部 -->
+<div class="topBox">
+ <div class="conWidth">
+	 <div id="logo" style="float:left">
+	 	<img src="images/logo.png" width="100" height="80" alt="">
+	 </div>
+	 <div id="logoText" style="float:left;font-size:25px;font-weight:bold;color:#333;margin-left:10px;font-family:'微软雅黑';line-height:80px;">
+	 	<img src="images/text.png" width="200" height="80" alt="">
+	 </div>
+	 <div class="navBox" style="margin-top:-15px;">
+	 	<ul>
+	 		<li>
+	 			<a href="index.html">
+	 				<img src="images/sun.png" width="60" height="60" alt="">
+	 				<span>首页</span>
+	 			</a>
+	 		</li>
+	 		<li>
+	 			<a href="nature_story/nature_beautful.html">
+	 				<img src="images/flower.png" width="60" height="60" alt="">
+	 				<span>美丽自然</span>
+	 			</a>
+	 		</li>	
+	 		<li>
+	 			<a href="destroyNature.html">
+	 				<img src="images/tree.png" width="60" height="60" alt="">
+	 				<span>美丽自然</span>
+	                </a>
+	            </li>   
+	            <li>
+	                <a href="../destroyNature.html">
+	                    <img src="../images/tree.png" width="60" height="60" alt="">
+	                    <span>破坏自然</span>
+	 			</a>
+	 		</li>	
+	 		<li>
+	 			<a href="peace.html">
+	 				<img src="images/butterfly.png" width="60" height="60" alt="">
+	 				<span>和谐相处</span>
+	 			</a>
+	 		</li>
+	 	</ul>
+	 </div>
+  </div>
+</div>
+<!-- 切换图 -->
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+	<!-- Indicators -->
+	<ol class="carousel-indicators">
+		<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+		<li data-target="#myCarousel" data-slide-to="1"></li>
+		<li data-target="#myCarousel" data-slide-to="2"></li>
+		<li data-target="#myCarousel" data-slide-to="3"></li>
+		<li data-target="#myCarousel" data-slide-to="4"></li>
+		<li data-target="#myCarousel" data-slide-to="5"></li>
+	</ol>
+	<div class="carousel-inner">
+		<div class="item active">
+			<img src="images/ph1.jpg" style="width: 100%" data-src=" " alt="First slide">
+			<div class="container">
+				<div class="carousel-caption">
+					<h1>被雾霾笼罩着的城市</h1>
+					<p>生活在城市里的人们，从早上起床的那一刻开始注定着被这样的雾霾所笼罩，不得不去呼吸着这般谜一样的空气。</p>
+					<p>
+						<a class="btn btn-lg btn-primary" href="#tabss" role="button">了解雾霾</a></p>
+				</div>
+			</div>
+		</div>
+		<div class="item">
+			<img src="images/ph2.jpg" style="width: 100%" data-src="" alt="Second slide">
+			<div class="container">
+				<div class="carousel-caption">
+					<h1>水是生命之源，我们却在糟蹋</h1>
+					<p>人们在不断的浪费水资源，往河里扔垃圾，不断破坏着自然。我们开始忘记水是生命的源泉！</p>
+					<p>
+						<a class="btn btn-lg btn-primary" href="#tabss" role="button">了解水污染</a></p>
+				</div>
+			</div>
+		</div>
+		<div class="item">
+			<img src="images/ph3.jpg" style="width: 100%" data-src="" alt="Third slide">
+			<div class="container">
+				<div class="carousel-caption">
+					<h1>破坏森林</h1>
+					<p>人们从森林中不断的砍伐树木，做成各样舒适的家具，却不知道这些树木是支撑着整个自然的根本，是大自然的肺。我们所做的就像在破坏自己的身体一般！</p>
+					<p>
+						<a class="btn btn-lg btn-primary" href="#tabss" role="button">了解森林破坏</a></p>
+				</div>
+			</div>
+		</div>
+		<div class="item">
+			<img src="images/ph4.jpg" style="width: 100%" data-src="" alt="Third slide">
+			<div class="container">
+				<div class="carousel-caption">
+					<h1>光污染</h1>
+					<p>体现一个城市的繁华莫过于夜晚是否过于明亮。人们开始用各种各样的灯饰装点着大楼，却不知道间接的产生了光污染！</p>
+					<p>
+						<a class="btn btn-lg btn-primary" href="#tabss" role="button">了解光污染</a></p>
+				</div>
+			</div>
+		</div>
+		<div class="item">
+			<img src="images/ph5.jpg" style="width: 100%" data-src="" alt="Third slide">
+			<div class="container">
+				<div class="carousel-caption">
+					<h1>垃圾处理</h1>
+					<p>人们一天产生的垃圾早已经超过自然的消化能力。人们开始不得不去填埋焚烧垃圾，对自然产生另一种破坏。</p>
+					<p>
+						<a class="btn btn-lg btn-primary" href="http://baike.baidu.com/view/326627.htm" target="__blank" role="button">了解垃圾处理</a></p>
+				</div>
+			</div>
+		</div>
+		<div class="item">
+			<img src="images/ph6.jpg" style="width: 100%" data-src="" alt="Third slide">
+			<div class="container">
+				<div class="carousel-caption">
+					<h1>最后的动物</h1>
+					<p>假若世界最后只剩下了人类，人们便只能从纸上学习过这些曾经在这个世界上生活过的动物。唯有人类知道发生了什么！</p>
+					<p>
+						<a class="btn btn-lg btn-primary" href="http://baike.baidu.com/link?url=rJLWgejf8BT6AvJE5RM6P4tayDth8oAiEaz7s9aSjgjsP3T75luDHSd4BhK5F8vw_oy2xR_xkGgI8MEdiyb4nq" target="__blank" role="button">了解保护动物</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left">
+	</span></a><a class="right carousel-control" href="#myCarousel" data-slide="next"><span
+		class="glyphicon glyphicon-chevron-right"></span></a>
+</div>
+<!-- /.carousel -->
+<script src="js/jquery-1.11.1.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<!-- 切换图结束 -->
+<!-- 污染介绍 -->
+   <section class="tabs" id="tabss">
+<input id="tab-1" type="radio" name="radio-set" class="tab-selector-1" checked="checked" />
+<label for="tab-1" class="tab-label-1" style="width:120px;">雾霾</label>
+
+<input id="tab-2" type="radio" name="radio-set" class="tab-selector-2" />
+<label for="tab-2" class="tab-label-2" style="width:120px;">水污染</label>
+
+<input id="tab-3" type="radio" name="radio-set" class="tab-selector-3" />
+<label for="tab-3" class="tab-label-3" style="width:120px;">森林破坏</label>
+
+<input id="tab-4" type="radio" name="radio-set" class="tab-selector-4"/>
+<label for="tab-4" class="tab-label-4" style="width:120px;">光污染</label>
+
+<div class="clear-shadow"></div>
+			
+<div class="content">
+<div class="content-1">
+<h2>什么是雾霾？</h2>
+<p style="font-family: '微软雅黑';font-style: normal;font-size:14px;">雾霾，是雾和霾的组合词。雾霾常见于城市。中国不少地区将雾并入霾一起作为灾害性天气现象进行预警预报，统称为“雾霾天气”。</p>
+<p style="font-family: '微软雅黑';font-style: normal;font-size:14px;">雾霾是特定气候条件与人类活动相互作用的结果。高密度人口的经济及社会活动必然会排放大量细颗粒物（PM 2.5），一旦排放超过大气循环能力和承载度，细颗粒物浓度将持续积聚，此时如果受静稳天气等影响，极易出现大范围的雾霾。</p>
+	<h2>雾霾组成</h2>
+<p style="font-family: '微软雅黑';font-style: normal;font-size:14px;">霾是由空气中的灰尘、硫酸、硝酸、有机碳氢化合物等粒子组成的。它也能使大气浑浊，视野模糊并导致能见度恶化，如果水平能见度小于10000米时，将这种非水成物组成的气溶胶系统造成的视程障碍称为霾(Haze)或灰霾（Dust-haze），香港天文台称烟霞(Haze)。</p>
+<p style="font-family: '微软雅黑';font-style: normal;font-size:14px;">二氧化硫、氮氧化物以及可吸入颗粒物这三项是雾霾主要组成，前两者为气态污染物，最后一项颗粒物才是加重雾霾天气污染的罪魁祸首。它们与雾气结合在一起，让天空瞬间变得灰蒙蒙的。颗粒物的英文缩写为PM，北京监测的是PM2.5，也就是空气动力学当量直径小于等于2.5微米的污染物颗粒。</p>
+<p style="font-family: '微软雅黑';font-style: normal;font-size:14px;">雾霾主要由二氧化硫、氮氧化物和可吸入颗粒物这三项组成，它们与雾气结合在一起，让天空瞬间变得阴沉灰暗。颗粒物的英文缩写为PM，北京监测的是细颗粒物（PM2.5），也就是空气动力学当量直径小于等于2.5微米的污染物颗粒。这种颗粒本身既是一种污染物，又是重金属、多环芳烃等有毒物质的载体。
+霾粒子的分布比较均匀，而且灰霾粒子的尺度比较小，从0.001微米到10微米，平均直径大约在1～2微米左右，肉眼看不到空中飘浮的颗粒物。由于灰尘、硫酸、硝酸等粒子组成的霾，其散射波长较长的光比较多，因而霾看起来呈黄色或橙灰色。</p>
+	<h2>雾霾治理</h2>
+<p style="font-family: '微软雅黑';font-style: normal;font-size:14px;">治理雾霾不是一蹴而就的事情，但也不是毫无办法，羊毛出在羊身上，最好的办法就是减少燃油机动车使用量。</p>
+<p style="font-family: '微软雅黑';font-style: normal;font-size:14px;">北京市环保局机动车排放管理处主任科员连爱萍接受《第一财经日报》记者电话采访时也表示，北京市四分之一的PM2.5是“输入性”的，四分之三则是北京地区“自产”。其中，汽车尾气对此的“贡献率”在22%以上。因此，汽车尾气是北京PM2.5防治的重点“打击”对象。</p>
+<p style="font-family: '微软雅黑';font-style: normal;font-size:14px;">“减少污染源，削减大气污染物是解决雾霾的根本之道。”中国科学院大气物理研究所研究员王庚辰说。北京市经济信息化委副主任李洪说，据《关于北京市空气重污染日应急方案》，在重点排减企业中，北京共有58家企业实现了停产，完全切断了污染源；41家企业通过降低生产负荷，减少污染供需，实现30%以上的污染减排；强联水泥、平谷水泥二厂等均实现全部停产，水泥行业也实现了30%以上的减排任务。</p>
+<p style="font-family: '微软雅黑';font-style: normal;font-size:14px;">为了最大限度降低市区汽车车轮和路面尘埃的接触频率和面积，应将花圃和路肩做得比汽车通行的路面低，这样雨浆水和污染洒水就会从马路中间流向花圃下的土壤。然而遗憾的是，我们在350座城市很少观察到这种防范颗粒型扬尘污染的设计。</p>
+</div>
+<div class="content-2">
+<h2>什么是水污染？</h2>
+<p style="font-family: '微软雅黑';font-style: normal;font-size:14px;">水污染是由有害化学物质造成水的使用价值降低或丧失，污染环境的水。污水中的酸、碱、氧化剂，以及铜、镉、汞、砷等化合物，苯、二氯乙烷、乙二醇等有机毒物，会毒死水生生物，影响饮用水源、风景区景观。污水中的有机物被微生物分解时消耗水中的氧，影响水生生物的生命，水中溶解氧耗尽后，有机物进行厌氧分解，产生硫化氢、硫醇等难闻气体，使水质进一步恶化。</p>
+<h2>水污染事件</h2>
+<p style="font-family: '微软雅黑';font-style: normal;font-size:14px;">水俣病
+日本熊本县水俣镇一家氮肥公司排放的废水中含有汞，这些废水排入海湾后经过某些生物的转化，形成甲基汞。这些汞在海水、底泥和鱼类中富集，又经过食物链使人中毒。 当时，最先发病的是爱吃鱼的猫。中毒后的猫发疯痉挛，纷纷跳海自杀。没有几年，水俣地区连猫的踪影都不见了。1956年，出现了与猫的症状相似的病人。因为开始病因不清，所以用当地地名命名。1991年，日本环境厅公布的中毒病人仍有2248人，其中1004人死亡。</p>
+<p style="font-family: '微软雅黑';font-style: normal;font-size:14px;">污染事件</p>
+<p style="font-family: '微软雅黑';font-style: normal;font-size:14px;">1986年11月1日，瑞士巴塞尔市桑多兹化工厂仓库失火，近30吨剧毒的硫化物、磷化物与含有水银的化工产品随灭火剂和水流入莱茵河。顺流而下150公里内，60多万条鱼被毒死，500公里以内河岸两侧的井水不能饮用，靠近河边的自来水厂关闭，啤酒厂停产。有毒物沉积在河底，将使莱茵河因此而“死亡”20年。</p>
+<h2>治理措施</h2>
+<p style="font-family: '微软雅黑';font-style: normal;font-size:14px;">加强水源调配方面的研究 水资源不足是影响水质的重要因素，河水不流，水质就会恶化。应加强水源调配方面的研究，如何既节约水源又保护水环境是必须研究的课题。建设一批污水处理厂，应加强处理水的应用，处理厂与输水管道应同时规划、同时设计，将处理后的洁净水引入河道，这样既节约水资源又可保护水环境。</p>
+<p style="font-family: '微软雅黑';font-style: normal;font-size:14px;">公众参与措施</p>
+<p style="font-family: '微软雅黑';font-style: normal;font-size:14px;">为了推动对水资源进行综合性统筹规划和管理，加强水资源保护，解决日益严峻的缺水问题，开展广泛的宣传教育以提高公众对开发和保护水资源的认识，1993年1月18日，第47届联合国大会确定自1993年起，将每年的3月22日定为世界水日。</p>
+<p style="font-family: '微软雅黑';font-style: normal;font-size:14px;">面对严峻的缺水、水污染问题，我们应积极行动起来，珍惜每一滴水，采取节水技术、防治水污染、植树造林等多种措施，合理利用和保护水资源。</p>
+<p style="font-family: '微软雅黑';font-style: normal;font-size:14px;">水污染环境税暂无征收考虑
+“十二五”期间，水资源供需矛盾更加尖锐，保障生态用水的压力进一步加大；迫切需要统筹流域污染治理措施，开展流域水环境综合治理，加大水生态修复力度，从源头上扭转生态环境恶化。</p>
+<p style="font-family: '微软雅黑';font-style: normal;font-size:14px;">对此，有媒体提问，水污染防治所需资金数额巨大，筹措资金是否考虑通过征收水污染税、环境税？国家发改委相关负责人表示，筹措资金中将积极邀请社会和企业参与，国家暂无征收上述两税的考虑。</p>
+</div>
+<div class="content-3">
+<h2>什么是森林破坏？</h2>
+<p style="font-family: '微软雅黑';font-style: normal;font-size:14px;">人为因素的森林破坏包括森林采伐，人类引起森林火灾，酸雨和引进的物种。
+</p>
+<p style="font-family: '微软雅黑';font-style: normal;font-size:14px;">也有自然因素可能会破坏森林，包括森林火灾、昆虫、疾病、天气、物种之间的竞争等。
+</p>
+
+<h2>森林被破坏的主要原因</h2>
+<p style="font-family: '微软雅黑';font-style: normal;font-size:14px;"><p style="font-family: '微软雅黑';font-style: normal;font-size:14px;">◇为了利用木材，大量地砍伐森林</p>
+<p style="font-family: '微软雅黑';font-style: normal;font-size:14px;">◇烧毁田地造成的原始森林的消失</p>
+<p style="font-family: '微软雅黑';font-style: normal;font-size:14px;">◇为放牧，确保大规模的农地而开拓森林</p>
+<p style="font-family: '微软雅黑';font-style: normal;font-size:14px;">◇滑雪场等娱乐设施的开发</p>
+<p style="font-family: '微软雅黑';font-style: normal;font-size:14px;">◇因酸性雨导致树木干枯</p>
+<p style="font-family: '微软雅黑';font-style: normal;font-size:14px;">◇全球变暖造成的森林干枯</p>
+<p style="font-family: '微软雅黑';font-style: normal;font-size:14px;">◇频繁的火山爆发</p>
+<p style="font-family: '微软雅黑';font-style: normal;font-size:14px;">◇地壳板块运动</p>
+<p style="font-family: '微软雅黑';font-style: normal;font-size:14px;">1970年开始，酸雨的森林破坏备受瞩目。受害严重的主要地区是欧洲和北美的北方林。许多国家的森林面积在减少，有的国家失去了一半以上的森林。靠近五大湖的美国，加拿大受严重的酸雨影响。到处可以看到树叶掉落，干枯的森林。在中国的工业城市周边，也出现了针叶树林干枯的现象。除此之外，还有各个国家受酸雨的影响，森林在受破坏。</p>
+<h2>森林的作用</h2>
+<p style="font-family: '微软雅黑';font-style: normal;font-size:14px;">制造氧气:</p>
+　　<p style="font-family: '微软雅黑';font-style: normal;font-size:14px;">绿色植物是二氧化碳的消耗者和氧气的生产者。通常一公顷阔叶林一天可以消耗1000千克的二氧化碳，释放730千克的氧气。 </p>
+　　
+　　<p style="font-family: '微软雅黑';font-style: normal;font-size:14px;">净化空气:</p>
+　　<p style="font-family: '微软雅黑';font-style: normal;font-size:14px;">实验证明，林木在低浓度范围内，吸收各种有毒气体，使污染的环境得到净化。</p>　　
+　　<p style="font-family: '微软雅黑';font-style: normal;font-size:14px;">杀灭细菌:</p>
+　　<p style="font-family: '微软雅黑';font-style: normal;font-size:14px;">据调查，闹市区空气的细菌，比绿化区多7倍以上。原因之一就是有些植物能分泌强大的抗生素，如橙、柠檬、圆柏、黑核桃、法国梧桐等植物，都有较强的杀菌力。 </p>
+　　 
+　　<p style="font-family: '微软雅黑';font-style: normal;font-size:14px;">此外,森林在涵养水源、保持水土、防风护沙、调节气候等方面，都起着非常重要的作用。</p>
+</div>
+<div class="content-4">
+	<h2>光污染</h2>
+<p style="font-family: '微软雅黑';font-style: normal;font-size:14px;">光污染是继废气、废水、废渣和噪声等污染之后的一种新的环境污染源，主要包括白亮污染、人工白昼污染和彩光污染。光污染正在威胁着人们的健康。 在日常生活中，人们常见的光污染的状况多为由镜面建筑反光所导致的行人和司机的眩晕感，以及夜晚不合理灯光给人体造成的不适感。</p>
+<p style="font-family: '微软雅黑';font-style: normal;font-size:14px;">1、过量的光辐射对人类生活和生产环境造成不良影响的现象。包括可见光、红外线和紫</p>
+<p style="font-family: '微软雅黑';font-style: normal;font-size:14px;">外线造成的污染。</p>
+<p style="font-family: '微软雅黑';font-style: normal;font-size:14px;">2、影响光学望远镜所能检测到的最暗天体极限的因素之一。通常指天文台上空的大气辉光、黄道光和银河系背景光、城市夜天光等使星空背景变亮的效应。</p>
+<p style="font-family: '微软雅黑';font-style: normal;font-size:14px;">光污染问题最早于二十世纪三十年代由国际天文界提出，他们认为光污染是城市室外照明使天空发亮造成对天文观测的负面的影响。后来英美等国称之为“干扰光”，在日本则称为“光害”。</p>
+<h2>光污染主要危害</h2>
+<p style="font-family: '微软雅黑';font-style: normal;font-size:14px;">
+损害眼睛</p>
+<p style="font-family: '微软雅黑';font-style: normal;font-size:14px;">近视与环境有关，人们都知道水污染、大气污染
+ 、噪声污染对人类健康的危害，却没有发觉身边潜在的威胁—燥光污染，正严重损害着人们的眼睛。
+让人们越来越懂得环境对人类生存健康的重要性。人们关注水污染、大气污染、噪声污染等，并采取措施大力整治，但对燥光污染却重视不够。其后果就是各种眼疾，特别是近视比率迅速攀升。据统计，我国高中生近视率达60%以上，居世界第二位。</p>
+<p style="font-family: '微软雅黑';font-style: normal;font-size:14px;">20世纪30年代，科学研究发现，荧光灯的频繁闪烁会迫使瞳孔频繁缩放，造成眼部疲劳。如果长时间受强光刺激，会导致视网膜水肿、模糊，严重的会破坏视网膜上的感光细胞，甚至使视力受到影响。“光照越强，时间越长，对眼睛的刺激就越大。”建筑物的玻璃幕墙就像一面巨大的镜子，反射光进入高速行驶的汽车内，会造成人突发性暂时失明和视力错觉，易导致交通事故的发生。</p>
+<h2>防治方法</h2>
+<p style="font-family: '微软雅黑';font-style: normal;font-size:14px;">1．要减少光污染这种都市新污染的危害，关键在于加强城市规划管理，合理布置光源，加强对广告灯和霓虹灯的管理，禁止使用大功率强光源，控制使用大功率民用激光装置，限制使用反射系数较大的材料等措施势在必行。作为普通民众，一方面切勿在光污染地带长时间滞留，若光线太强，房间可安装百叶窗或双层窗帘，根据光线强弱作相应调节；另一方面应全民动手，在建筑群周围栽树种花，广植草皮，以改善和调节采光环境等等。</p>
+<p style="font-family: '微软雅黑';font-style: normal;font-size:14px;">2．建议国家制定与光污染有关的技术规范和相应的法律法规。我国还很少有人认识到光污染的危害，因此根本还没有这方面统一的标准。专家认为在我国城市夜景观建设迅速发展的时候，尽快制定景观照明的技术标准是必要的。我们不要去走别人已经走过的弯路。另外，专家认为加强夜景观设计、施工的规范化管理也十分重要。我国目前从事灯光设计施工的人员当中专业技术人员很少，许多产生光污染和光干扰的夜景观是由不科学的设计施工造成的。据了解，天津市颁布了《城市夜景照明技术规范》，这是我国第一个有关夜景照明的技术规范。北京市在夜景建设中曾有一个“城市夜景照明工程评比标准”，但衡量光污染的方面只有简单的项目。专家呼吁，城市夜景建设中缺乏科学性和规范化的局面亟待改变。</p>
+
+</div>
+    </div>
+</section>
+	<div id="allDoes">
+	<br><br><br><br><br>
+		<div class="introDiv">
+		<center>
+			<h2>我们应该如何保护自然？</h2>
+		</center>
+			<p>生态环境道德的总体要求是：热爱自然，保护生态，改善环境。对青少年生态环境道德的具体行为要求是：珍爱生灵，节约资源，抵制污染，植绿护绿。要努力使保护母亲河行动成为广大青少年学习生态环境道德、学习环境保护知识和技能的重要载体。</p>
+
+<p>青少年要率先珍爱生灵、节约资源，植绿护绿、抵制污染。</p>
+
+<p>青少年既是生态环境道德的重点教育对象，更是生态环境道德建设的积极推动者。广大青少年要率先行动、开风气之先，充分发挥生力军作用。</p>
+
+<p>与和谐与共的人与自然关系理想状态和境界相适应，生态环境道德要求人们热爱自然、保护生态、改善环境。对于青少年来说，要首先做到：</p>
+
+<p>珍爱生灵。平等对待自然界中的其它生命体，不随意损害它们，保持生态系统平衡。不践踏草木，不攀折花叶，不虐待小动物，不吃珍稀动植物等都是珍爱生灵。</p>
+
+<p>节约资源。我们只有一个地球，资源有限，生活在地球上的人却不断增长。节约粮食、节约用水、节约纸张，使用可再生的资源、分类回收废物，生活简朴等等，都是节约资源。</p>
+
+<p>植绿护绿。没有森林和植被等绿色，便没有人类，没有地球上的绝大多数生命。多植一棵树、多种一片草、多养一盆花、多增加一些绿色，都是青少年应尽的义务。</p>
+
+<p>抵制污染。不当的生产生活行为，会带来很大污染。不乱扔垃圾、不用或少用难降解和难再生的物品、不焚烧秸秆、制止污染等都是抵制污染。</p>
+		</div>
+	</div>
+</body>
+</html>

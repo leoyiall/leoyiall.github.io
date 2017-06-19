@@ -1,0 +1,205 @@
+*{ padding:0px; margin:0}
+@media only screen and (min-width: 420px) {
+	.demo{width:800px; margin:60px auto 10px auto}
+}
+.box{float:left; width:380px; height:260px}
+.clear{clear:both}
+a{text-decoration: none;font-size:14px;color:#000;}
+body{ color:#fff; font-family:"Microsoft Yahei"; text-align:center;
+	font-family: "微软雅黑";
+	cursor:url("../leaf.ico");
+}
+.menu{ height:42px; background:rgba(0,0,0,0.6);position:fixed;  top:0px; left:0; z-index:998; width:100%; }
+.menu li{list-style:none; float:left; display:inline-block; font:16px/42px "Microsoft Yahei";}
+.menu li a{ color:#fff; text-decoration:none; text-align:center; display:block; padding:0px 15px}
+.menu li.active{ background:#F00;}
+#sectionOne{
+	background:url("../images/1.jpg")top center;
+	background-size: 100%;
+}
+.conWidth{
+	width:1100px;
+	margin:0 auto;
+/* 	border:1px solid #000; */
+	overflow: hidden;
+	*zoom:1;
+}
+.topBox{
+	position: fixed;
+	top:0;
+	z-index:999;
+	width:100%;
+	height:80px;
+	/*border-bottom: 1px solid #fafafa;*/
+	box-shadow: 0 0 5px #ccc;
+	background-color: rgba(240,240,240,0.7);
+}
+.topBox #logo{
+	width:100px;
+	height:80px;
+	float:left;	
+}
+.topBox .navBox ul,li{
+	list-style-type: none;
+}
+.topBox .navBox{
+	float:right;
+}
+.topBox .navBox li{
+	width:60px;
+	height:80px;
+	line-height: 10px;
+	float:left;
+	margin-right:10px;
+}
+.topBox .navBox li a{
+	color:#fff;
+}
+.topBox .navBox li span:hover{
+	transition:linear 0.3s;
+	-webkit-transform:linear 0.3s;
+	transform:scale(1.2,1.2);
+	-webkit-transform:scale(1.2,1.2);
+	display: none;
+}
+.topBox .navBox li a:hover span{
+	display: none;
+}
+.topBox .navBox li a:hover img{
+	transition:linear 0.3s;
+	-webkit-transform:linear 0.3s;
+	transform:scale(1.2,1.2);
+	-webkit-transform:scale(1.2,1.2);
+}
+.topBox .navBox li img{
+	transition:linear 0.3s;
+	-webkit-transform:linear 0.3s;
+}
+#introShow{
+	font-size:30px;
+	font-weight: bold;
+	color:#fff;
+	line-height:50px;
+	font-family: "微软雅黑";
+}
+#sectionTwo{
+	background:url("../images/two.jpg")no-repeat;
+	background-size: 100%;
+}
+img{border:none;}
+#introduceProtect{
+	position:absolute;
+	top:100px;
+	left:200px;
+	color:#000;
+	z-index:99;
+	width:70%;
+	margin:0 auto;
+	text-align:left;
+	background: rgba(240,240,240,0.8);
+	padding:20px;
+}
+#introduceProtect p{
+	text-indent: 2em;
+	margin:5px auto;
+	font-size: 16px;
+	line-height: 22px;
+	font-family: "微软雅黑";
+}
+#section4{
+	background:url("../images/bg5.jpg");
+	background-size: 100%;
+}
+#successIntroduce{
+	width:1000px;
+	margin:0 auto;
+	color:#000;
+	text-align: left;
+}
+#successIntroduce p{
+	text-indent: 2em;
+	font-size: 16px;
+}
+#colums{
+line-height: 30px;
+column-count: 3;
+column-gap: 10px;
+font-family: "微软雅黑";
+}
+#footer{
+	width:100%;
+	height:50px;
+	text-align: center;
+	z-index: 100;
+	position: absolute;
+	bottom:0;
+}
+/*切换图效果的css*/
+#myCarousel{
+	width:100%;
+	height:100vh;
+}
+#myCarousel img{
+	width:100%;
+	height:100vh;
+}
+.content p{
+	text-indent: 2em;
+}
+#allDoes{
+	width:100%;
+	height:100vh;
+	background: url("../images/intro.jpg");
+	background-size: 100%;
+}
+.introDiv{
+	width:1000px;
+	height:500px;
+	background:rgba(240,240,240,0.8);
+	margin:0 auto;
+	text-align: left;
+	padding:10px;
+}
+.introDiv h2{
+	font-size: 20px;
+	font-weight: bold;
+	padding-top:10px;
+}
+.introDiv p{
+	text-indent: 2em;
+}
+#intro_Box{
+	width:100%;
+	z-index: 100;
+	height:100px;
+}
+#peaceBox{
+	width:100%;
+	height:100vh;
+	background:#fbfbfb;
+	margin:0 auto;
+}
+#peaceBoxs{
+	width:100%;
+	height:100vh;
+	margin:0 auto;
+	margin-top:60px;
+	background:#fbfbfb;
+	background: url("../images/bhzr.jpg")no-repeat;
+	background-size: 100%;
+}
+#peaceBoxs p{
+	text-indent: 2em;
+	text-align: left;
+	padding-left:10px;
+	padding-right: 10px;
+}
+#midWidth{
+	padding-bottom: 20px;
+	width:1100px;
+	margin:0 auto;
+	font-family: "微软雅黑";
+	color:#000;
+	background:rgba(230,230,230,0.8);
+	line-height: 25px;
+}

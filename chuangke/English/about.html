@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>About us</title>
+  <link rel="stylesheet" href="css/about.css" />
+    <link rel="stylesheet" href="css/public.css" />
+ </head>
+ <body>
+ <!-- 这里是头部 -->
+  	<div id="Top">
+  	 <!-- 这里是导航 -->
+  		<div id="Nav">
+  			<div class="logo">
+				Maker  				
+  			</div>
+  			<div class="dh">
+  			<ul>
+  				<a href="index.html"><li class="aa">Homepage</li></a>
+  				<a href="lishi.html"><li class="bb">History</li></a>
+  				<a href="home.html"><li class="cc">Home</li></a>
+  				<a href="fuhua.html"><li class="dd">Incubation</li></a>
+  				<a href="about.html"><li class="cc on">Us</li></a>
+  			</ul>
+  			</div>
+  		</div>
+	<div id="english">
+		<a href="../about.html">Chinese</a>
+		<a href="about.html">English</a>
+	</div>
+  	</div>
+    	<!-- 这里是主体 -->
+	<div id="Main">
+		<div class="mxp1">
+			<p>Wu Xiu fang</p>
+			<p class="wen">
+				Morning moon falling on my hair, has been quietly in the shadows behind him……
+			</p>
+		</div>
+		<div class="mxp2">
+		 <p>leo</p>
+			<p class="wen">
+				One scene, like walk and record the wonderful moments
+			</p>
+		</div>
+		<div class="mxp3">
+			<p>Wei yun yan</p>
+			<p class="wen">
+				If we ever get lost, if fear head on, the stars shine for us!
+			</p>
+		</div>
+		<div class="mxp4">
+			<p>Yuyuqian</p>
+			<p class="wen">
+			Cheng Si Jing, general cute mature soft General narcissism
+			</p>
+		</div>
+	</div>
+	<!-- 这里是底部footer部分 -->
+  	<div id="footer">
+  	<!-- 这里是底部footer字部分 -->
+		<div id="Mid">
+		<!-- 这里是底部footer左边部分 -->
+			<div class="zuo">
+				<p><span>Instructor Teacher:</span>Luo ri cai</p>
+				<p><span>Producer:</span>leo、WuXiufang、WeiYunyan、Yuyuqian</p>
+			</div>
+		<!-- 这里是底部footer右边部分 -->
+			<div class="you">
+				Follow Us:<br>
+				<img src="../images/er.png" class="guo">
+			</div>
+		</div>
+		<p>copyright:By he chi Universty 13 Technology ©</p>
+  	</div>
+
+  	  	  	<!-- 返回头部 -->
+  	<p id="back-to-top"><a href="#top"><img src="../images/back.jpg" title="返回顶部"></a></p>
+  	<script src="../js/jquery-1.7.2.min.js"></script>
+<script>
+$(function(){
+        //当滚动条的位置处于距顶部100像素以下时，跳转链接出现，否则消失
+        $(function () {
+            $(window).scroll(function(){
+                if ($(window).scrollTop()>100){
+                    $("#back-to-top").fadeIn(500);
+                }
+                else
+                {
+                    $("#back-to-top").fadeOut(500);
+                }
+            });
+            //当点击跳转链接后，回到页面顶部位置
+            $("#back-to-top").click(function(){
+                $('body,html').animate({scrollTop:0},500);
+                return false;
+            });
+        });
+    });
+</script>
+ </body>
+</html>
