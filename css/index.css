@@ -120,7 +120,7 @@ margin-left: -200px; */
 .introRight ul li{
 	padding:10px;
 	list-style-type:none;
-	margin:20px 10px;
+	margin:5px;
 	font-size: 20px;
 	font-family: "楷体";
 	color:#fff;
@@ -301,7 +301,7 @@ margin-left: -200px; */
 }
 .contentTwo img{
 	width: 265px;
-	height: 200px;
+	height: 180px;
 }
 @-webkit-keyframes dh{
 	0%{
